@@ -32,6 +32,7 @@
         android:layout_height="wrap_content"
         android:text="Võ Lê Nhật Huy"
         android:textColor="@color/white"
+        android:fontFamily="@font/niramit_semibold"
         android:textSize="28sp"
         app:layout_constraintTop_toBottomOf="@id/imageProfile"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,6 +73,7 @@
                 android:text="@string/v_voucher"
                 android:textColor="@color/textColor"
                 android:textSize="22sp"
+                android:fontFamily="@font/niramit_semibold"
                 android:layout_marginStart="18dp"
                 tools:ignore="RtlCompat"
                 />
@@ -79,7 +81,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_go_next"
-                android:layout_marginStart="159dp"/>
+                android:layout_marginStart="154dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -105,6 +107,7 @@
                 android:text="@string/payment"
                 android:textColor="@color/textColor"
                 android:textSize="22sp"
+                android:fontFamily="@font/niramit_semibold"
                 android:layout_marginStart="18dp"
                 tools:ignore="RtlCompat"
                 />
@@ -112,7 +115,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_go_next"
-                android:layout_marginStart="175dp"/>
+                android:layout_marginStart="174dp"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/layoutFeaturesItem3"
@@ -136,6 +139,7 @@
                 android:text="@string/cart_history"
                 android:textColor="@color/textColor"
                 android:textSize="22sp"
+                android:fontFamily="@font/niramit_semibold"
                 android:layout_marginStart="18dp"
                 tools:ignore="RtlCompat"
                 />
@@ -143,7 +147,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_go_next"
-                android:layout_marginStart="93dp"/>
+                android:layout_marginStart="92dp"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/layoutFeaturesItem4"
@@ -165,6 +169,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="57dp"
                 android:text="Reward Credits"
+                android:fontFamily="@font/niramit_semibold"
                 android:textColor="@color/textColor"
                 android:textSize="22sp"
                 android:layout_marginStart="18dp"
@@ -174,7 +179,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_go_next"
-                android:layout_marginStart="113dp"/>
+                android:layout_marginStart="110dp"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/layoutFeaturesItem5"
@@ -198,6 +203,7 @@
                 android:text="@string/management_app"
                 android:textColor="@color/textColor"
                 android:textSize="22sp"
+                android:fontFamily="@font/niramit_semibold"
                 android:layout_marginStart="18dp"
                 tools:ignore="RtlCompat"
                 />
@@ -205,7 +211,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_go_next"
-                android:layout_marginStart="30dp"/>
+                android:layout_marginStart="26dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -231,6 +237,7 @@
                 android:text="@string/invite_fr"
                 android:textColor="@color/textColor"
                 android:textSize="22sp"
+                android:fontFamily="@font/niramit_semibold"
                 android:layout_marginStart="18dp"
                 tools:ignore="RtlCompat"
                 />
@@ -262,6 +269,7 @@
                 android:text="@string/feedback"
                 android:textColor="@color/textColor"
                 android:textSize="22sp"
+                android:fontFamily="@font/niramit_semibold"
                 android:layout_marginStart="18dp"
                 tools:ignore="RtlCompat"
                 />
@@ -269,7 +277,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_go_next"
-                android:layout_marginStart="204dp"/>
+                android:layout_marginStart="203dp"/>
         </LinearLayout>
 
     </LinearLayout>
