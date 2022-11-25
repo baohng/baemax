@@ -132,7 +132,10 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:text="Sign in" />
+                android:text="Sign in"
+                android:elevation="2dp"
+
+                />
 
 
         </LinearLayout>
@@ -153,7 +156,72 @@
         android:layout_alignParentBottom="true"
         android:layout_marginRight="11dp"
         android:layout_marginBottom="30dp"
-
+        android:onClick="onLoginClick"
         android:src="@drawable/ic_add_img" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="606dp"
+        android:layout_marginEnd="58dp"
+        android:background="@drawable/signupwith"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/img"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="Sign in with facebook"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="659dp"
+        android:layout_marginEnd="58dp"
+        android:background="@drawable/signupwith"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/img_1"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dp"
+            android:gravity="center"
+            android:text="Sign in with google"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
 
 </RelativeLayout>
