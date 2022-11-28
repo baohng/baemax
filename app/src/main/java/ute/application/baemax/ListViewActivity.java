@@ -1,30 +1,21 @@
 package ute.application.baemax;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentStatePagerAdapter;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager2.widget.ViewPager2;
-import ute.application.baemax.SandwichFragment;
-
 
 import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class MainActivity extends AppCompatActivity {
-
+public class ListViewActivity extends AppCompatActivity {
     TabLayout tabLayout;
-     ViewPager2 viewPager;
-     MyViewPagerAdapter myViewPagerAdapter;
+    ViewPager2 viewPager;
+    MyViewPagerAdapter myViewPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_list_view);
 
         tabLayout = findViewById(R.id.tab_layout);
         viewPager = findViewById(R.id.view_pager);
@@ -48,14 +39,5 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-
-    }
-
-    private void replaceFragment(SandwichFragment fragment){
-
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.commit();
     }
 }

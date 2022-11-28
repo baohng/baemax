@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Baemax</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="name_1">Sandwich Cheese</string>
+    <string name="name_2">Sandwich Vegetable</string>
+    <string name="name_3">Sandwich Egg</string>
+    <string name="star_1">5</string>
+    <string name="star_2">3</string>
+    <string name="star_3">4</string>
+    <string name="price_1">4.99</string>
+    <string name="price_2">5.33</string>
+    <string name="price_3">4.22</string>
+    <string name="describe_1">very delicious,fragrant</string>
+    <string name="describe_2">very yummy,fragrant</string>
+    <string name="describe_3">very delicious,Stunning</string>
+    <string name="hello_blank_fragment">hello_blank_fragment</string>
+
 </resources>
