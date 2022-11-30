@@ -1,10 +1,12 @@
-package ute.application.baemax;
+package ute.application.baemax.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 
 
 import android.os.Bundle;
+
+import ute.application.baemax.R;
 
 
 public class MainActivity extends AppCompatActivity {

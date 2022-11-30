@@ -1,13 +1,13 @@
-package ute.application.baemax;
+package ute.application.baemax.adapters;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
-import ute.application.baemax.BurgersFragment;
-import ute.application.baemax.SandwichFragment;
-import ute.application.baemax.PizzaFragment;
-import ute.application.baemax.SandwichFragment;
+import ute.application.baemax.fragments.BurgersFragment;
+import ute.application.baemax.fragments.DrinksFragment;
+import ute.application.baemax.fragments.SandwichFragment;
+import ute.application.baemax.fragments.PizzaFragment;
 
 public class MyViewPagerAdapter extends FragmentStateAdapter {
     public MyViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {

@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/drawable/border_image.xml" value="0.153" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/drawable/item_layout.xml" value="0.1525" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/drawable/menu_listview.xml" value="0.1" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/activity_cart.xml" value="0.20416666666666666" />

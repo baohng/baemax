@@ -1,4 +1,4 @@
-package ute.application.baemax;
+package ute.application.baemax.fragments;
 
 import android.os.Bundle;
 
@@ -14,8 +14,12 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+import ute.application.baemax.R;
+import ute.application.baemax.adapters.MyAdapter;
+import ute.application.baemax.dao.Item;
 
-public class SandwichFragment extends Fragment {
+
+public class BurgersFragment extends Fragment {
     private ArrayList<Item> itemArrayList;
     private  String[] itemName,itemPrice,itemStar, itemDescribe ;
     private int[] itemImage;
@@ -26,7 +30,7 @@ public class SandwichFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.fragment_sandwich, container, false);
+        return inflater.inflate(R.layout.fragment_burgers, container, false);
 
     }
 
@@ -35,7 +39,7 @@ public class SandwichFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         dataInitialize();
 
-        recyclerView = view.findViewById(R.id.recyclerview1);
+        recyclerView = view.findViewById(R.id.recyclerview_burgers);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setHasFixedSize(true);
         MyAdapter myAdapter = new MyAdapter(getContext(),itemArrayList);
@@ -49,9 +53,9 @@ public class SandwichFragment extends Fragment {
         itemArrayList = new ArrayList<>();
 
         itemName = new String[]{
-                getString(R.string.name_1),
-                getString(R.string.name_2),
-                getString(R.string.name_3),
+                getString(R.string.name_7),
+                getString(R.string.name_8),
+                getString(R.string.name_9),
         };
 
         itemStar = new String[]{
@@ -73,9 +77,9 @@ public class SandwichFragment extends Fragment {
         };
 
         itemImage = new int[]{
-                R.drawable.sandwich_phomai,
-                R.drawable.sandwich_rau_cu,
-                R.drawable.sandwich_trung
+                R.drawable.burgers_buffalo,
+                R.drawable.burgers_cheese,
+                R.drawable.burgers_bacon
         };
 
         for (int i = 0; i<itemName.length; i++){

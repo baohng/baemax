@@ -1,4 +1,4 @@
-package ute.application.baemax;
+package ute.application.baemax.dao;
 
 public class Item {
     String name;

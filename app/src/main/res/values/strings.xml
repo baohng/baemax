@@ -1,9 +1,22 @@
 <resources>
     <string name="app_name">Baemax</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="name_1">Sandwich Cheese</string>
-    <string name="name_2">Sandwich Vegetable</string>
-    <string name="name_3">Sandwich Egg</string>
+    <string name="name_1">Sandwich Chicken</string>
+    <string name="name_2">Sandwich Tuna</string>
+    <string name="name_3">Sandwich Vegetable</string>
+
+    <string name="name_4">Pizza Italian</string>
+    <string name="name_5">Pizza Sweet</string>
+    <string name="name_6">Pizza Cheese</string>
+
+    <string name="name_7">Burgers Buffalo</string>
+    <string name="name_8">Burgers Cheese</string>
+    <string name="name_9">Burgers Bacon</string>
+
+    <string name="name_10">Keto drink mix</string>
+    <string name="name_11">Fancy drink mix</string>
+    <string name="name_12">Cocktail Mojito</string>
+
     <string name="star_1">5</string>
     <string name="star_2">3</string>
     <string name="star_3">4</string>

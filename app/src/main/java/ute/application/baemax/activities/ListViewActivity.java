@@ -1,4 +1,4 @@
-package ute.application.baemax;
+package ute.application.baemax.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
@@ -6,6 +6,9 @@ import androidx.viewpager2.widget.ViewPager2;
 import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
+
+import ute.application.baemax.R;
+import ute.application.baemax.adapters.MyViewPagerAdapter;
 
 public class ListViewActivity extends AppCompatActivity {
     TabLayout tabLayout;
