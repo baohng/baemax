@@ -11,7 +11,8 @@
         <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/drawable/register_background.xml" value="0.1905" />
         <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/drawable/signupwith.xml" value="0.1905" />
         <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/layout/activity_login.xml" value="0.264" />
-        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/layout/activity_main.xml" value="0.2418478260869565" />
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/layout/activity_login_admin.xml" value="0.44575163398692813" />
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/layout/activity_register.xml" value="0.264" />
       </map>
     </option>

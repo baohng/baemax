@@ -2,11 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/background">
-
+    tools:context=".LoginAdmin">
 
     <TextView
         android:id="@+id/textView2"
@@ -51,11 +50,10 @@
                 android:layout_marginTop="27dp"
                 android:layout_marginEnd="68dp"
                 android:text="ALREADY HAVE AN ACCOUNT"
-                android:textColor="@color/Green_main"
-                />
+                android:textColor="@color/Green_main" />
 
             <TextView
-                android:id="@+id/admin"
+                android:id="@+id/user"
                 style="@style/loginButton"
 
                 android:layout_width="wrap_content"
@@ -68,9 +66,10 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="5px"
                 android:gravity="center"
-                android:text="Admin"
-                android:textColor="@color/white"
-                android:onClick="onLoginClickADMIN"/>
+                android:onClick="onLoginClickUser"
+
+                android:text="User"
+                android:textColor="@color/white" />
         </RelativeLayout>
 
         <LinearLayout
@@ -137,9 +136,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
+                android:elevation="2dp"
                 android:gravity="center"
                 android:text="Sign in"
-                android:elevation="2dp"
 
                 />
 
@@ -147,23 +146,23 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <View
-        android:layout_width="11dp"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/ic_side_bg" />
+<!--    <View-->
+<!--        android:layout_width="11dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:background="@drawable/ic_side_bg" />-->
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="11dp"
-        android:layout_marginBottom="30dp"
-        android:onClick="onLoginClick"
-        android:src="@drawable/ic_add_img" />
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginRight="11dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:onClick="onLoginClick"-->
+<!--        android:src="@drawable/ic_add_img" />-->
 
     <LinearLayout
         android:layout_width="250dp"
@@ -228,6 +227,4 @@
             android:textSize="18sp" />
 
     </LinearLayout>
-
-
 </RelativeLayout>

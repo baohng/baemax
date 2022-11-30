@@ -19,4 +19,9 @@ public class MainActivity extends AppCompatActivity {
         overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
 
     }
+    public void onLoginClickADMIN(View View){
+        startActivity(new Intent(this,LoginAdmin.class));
+        overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
+
+    }
 }
