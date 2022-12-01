@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Baemax</string>
+    <string name="dang_xuat">Đăng Xuất</string>
+    <string name="v_voucher">Ví voucher</string>
+    <string name="payment">Payment</string>
+    <string name="cart_history">Lịch sử đơn hàng</string>
+    <string name="management_app">Ứng dụng cho chủ quán</string>
+    <string name="invite_fr">Mời bạn bè</string>
+    <string name="feedback">Góp ý</string>
 </resources>
