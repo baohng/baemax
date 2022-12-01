@@ -32,4 +32,5 @@
     <color name="background_color_50">#B3FFFFFF</color>
     <color name="text_color_header">#323232</color>
     <color name="text_color_description">#616161</color>
+    <color name="btnColor">#3BAA44</color>
 </resources>
