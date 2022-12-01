@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/drawable/btn_close.xml" value="0.2325" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/drawable/custom_button.xml" value="0.2325" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/drawable/item_radius.xml" value="0.2535" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/drawable/radius.xml" value="0.2325" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/drawable/radius_card.xml" value="0.2325" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/drawable/radius_carditem.xml" value="0.2325" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/food_list.xml" value="0.24010416666666667" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/home_activity.xml" value="0.253125" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/item_card.xml" value="0.2390625" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/item_card1.xml" value="0.536" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/item_card2.xml" value="0.25416666666666665" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/item_category.xml" value="0.2390625" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/item_category2.xml" value="0.24010416666666667" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/successoder.xml" value="0.253125" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/test.xml" value="0.536" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
