@@ -87,14 +87,14 @@
                 android:text="Nhập email" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputEmail"
+                android:id="@+id/textInputEmail_1"
                 style="@style/parent"
                 android:layout_margin="10dp"
 
                 android:layout_marginTop="@dimen/loginViewsMargin">
 
                 <EditText
-                    android:id="@+id/editTextEmail"
+                    android:id="@+id/editTextEmail_1"
                     style="@style/modifiedEditText"
                     android:hint="@string/login_email_hint"
                     android:inputType="textEmailAddress"
@@ -109,14 +109,14 @@
                 android:text="Nhập password" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputPassword"
+                android:id="@+id/textInputPassword_1"
                 style="@style/parent"
                 android:layout_margin="10dp"
 
                 android:layout_marginTop="@dimen/loginViewsMargin">
 
                 <EditText
-                    android:id="@+id/editTextPassword"
+                    android:id="@+id/editTextPassword_1"
                     style="@style/modifiedEditText"
                     android:hint="@string/login_password_hint"
                     android:inputType="textPassword"
@@ -131,6 +131,7 @@
                 android:text="remember password" />
 
             <Button
+                android:id="@+id/cirLoginButton"
                 style="@style/loginButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
