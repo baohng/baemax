@@ -14,12 +14,28 @@
         android:theme="@style/Theme.Baemax"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".Payfood"
             android:exported="false" />
         <activity
             android:name=".Profile"
             android:exported="false" />
         <activity
+=======
+            android:name=".Item_card"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu_detail"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+>>>>>>> features/na/ui-detail-2
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
