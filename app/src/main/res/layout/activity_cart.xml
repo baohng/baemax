@@ -12,8 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="fitCenter"
-        android:src="@drawable/banner_card1"
-         />
+        android:src="@drawable/banner_card1" />
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
