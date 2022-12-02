@@ -1,4 +1,4 @@
-package ute.application.baemax;
+package ute.application.baemax.activities;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,6 +20,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import ute.application.baemax.R;
 
 public class Register extends AppCompatActivity {
 

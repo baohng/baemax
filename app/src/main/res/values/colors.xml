@@ -7,6 +7,9 @@
     <color name="teal_700">#BDED9D</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="textColor">#3BAA44</color>
+    <color name="bray_btn">#A5A5A5</color>
+    <color name="main_color">#3BAA44</color>
     <color name="Green_main">#3BAA44</color>
     <color name="Green_nhat">#BDED9D</color>
 
@@ -29,4 +32,5 @@
     <color name="background_color_50">#B3FFFFFF</color>
     <color name="text_color_header">#323232</color>
     <color name="text_color_description">#616161</color>
+    <color name="btnColor">#3BAA44</color>
 </resources>

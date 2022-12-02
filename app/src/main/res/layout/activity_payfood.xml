@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Payfood"
+    android:background="#FAF8EB">
+
+    <ImageView
+        android:id="@+id/iconCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cancel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginEnd="@dimen/_8sdp"/>
+
+    <TextView
+        android:id="@+id/textViewItemSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buffalo burger"
+        android:textColor="#000000"
+        android:fontFamily="@font/niramit_semibold"
+        android:textSize="@dimen/_28sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <LinearLayout
+        android:id="@+id/layoutAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewItemSelected"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="36 Phạm Văn Nghị, Thanh Khê, Đà Nẵng"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            android:fontFamily="@font/niramit_regular"
+            android:layout_marginStart="@dimen/_16sdp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_15sdp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutPayfoodFeatures1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/layoutAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp">
+
+        <LinearLayout
+            android:id="@+id/layoutOption1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/_12sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Size"
+                android:textColor="@color/black"
+                android:fontFamily="@font/niramit_semibold"
+                android:textSize="@dimen/_15sdp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Required"
+                android:background="@drawable/bg_required"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/niramit_regular"
+                android:layout_marginStart="@dimen/_150sdp"
+                android:textColor="#C35E5E"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/_12sdp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small - 6'' "
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/niramit_regular"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.99$"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_160sdp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/_12sdp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium - 10'' "
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/niramit_regular"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.99$"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_139sdp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/_12sdp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large - 14'' "
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/niramit_regular"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8.99$"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_153sdp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutPayfoodFeatures2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/layoutPayfoodFeatures1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp">
+
+        <LinearLayout
+            android:id="@+id/layoutOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/_12sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Crust"
+                android:textColor="@color/black"
+                android:fontFamily="@font/niramit_semibold"
+                android:textSize="@dimen/_15sdp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Required"
+                android:background="@drawable/bg_required"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/niramit_regular"
+                android:layout_marginStart="@dimen/_150sdp"
+                android:textColor="#C35E5E"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/_12sdp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Classic Hand tassed"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/niramit_regular"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.99$"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_100sdp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/_12sdp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thin Crust"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/niramit_regular"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.99$"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_160sdp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/_12sdp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cheese"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/niramit_regular"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8.99$"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_178sdp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutPayfoodFeatures3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/layoutPayfoodFeatures2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp">
+
+        <LinearLayout
+            android:id="@+id/layoutOption3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/_12sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add on"
+                android:textColor="@color/black"
+                android:fontFamily="@font/niramit_semibold"
+                android:textSize="@dimen/_15sdp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Optional"
+                android:background="@drawable/bg_optional"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/niramit_regular"
+                android:layout_marginStart="@dimen/_186sdp"
+                android:textColor="#575454"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/_12sdp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Extra Cheese"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/niramit_regular"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.99$"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_115sdp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/_12sdp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add mushroom"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/niramit_regular"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.99$"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_131sdp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutPayfoodFeatures3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <Button
+            android:id="@+id/buttonOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_19sdp"
+            android:background="@drawable/bg_order_btn"
+            android:fontFamily="@font/niramit_semibold"
+            android:paddingStart="@dimen/_70sdp"
+            android:paddingEnd="@dimen/_70sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="ORDER"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Total"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/niramit_regular"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/buttonOrder"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            />
+
+        <TextView
+            android:id="@+id/textViewTotalMoneyPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15.50$"
+            android:textSize="@dimen/_20sdp"
+            android:fontFamily="@font/niramit_semibold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/buttonOrder"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTotal"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

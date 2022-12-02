@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="972dp"
+    android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".Register">
+    tools:context=".activities.Register">
 
     <TextView
         android:id="@+id/textView2"
         style="@style/textBold"
-        android:layout_width="157dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -20,7 +20,7 @@
         android:layout_marginEnd="233dp"
         android:text="BaeMax"
         android:textColor="@color/Green_main"
-        android:textSize="38dp" />
+        android:textSize="@dimen/_30ssp" />
 
 
     <RelativeLayout
@@ -34,38 +34,32 @@
         android:layout_marginEnd="40dp"
         android:background="@drawable/register_background">
 
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/header_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/header_login_br">
+            android:background="@drawable/header_login_br"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
 
             <TextView
                 style="@style/textBold"
-                android:layout_width="248dp"
-                android:layout_height="33dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="27dp"
-                android:layout_marginEnd="68dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="CREATE AN ACCOUNT"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
                 android:textColor="@color/Green_main" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="262dp"
-                android:layout_marginTop="27dp"
-                android:layout_marginEnd="11dp"
                 android:text="Sign in"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_85sdp"
                 android:textColor="@color/black" />
-        </RelativeLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -77,9 +71,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="@dimen/_9sdp"
                 android:layout_marginTop="10dp"
-                android:text="Full name" />
+                android:text="Full name"
+                android:textColor="@color/black"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputName"
@@ -98,9 +93,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="@dimen/_9sdp"
                 android:layout_marginTop="10dp"
-                android:text="Phone number" />
+                android:text="Phone number"
+                android:textColor="@color/black"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputPhoneNumber"
@@ -121,9 +117,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="@dimen/_9sdp"
                 android:layout_marginTop="10dp"
-                android:text="Phone number" />
+                android:text="Email"
+                android:textColor="@color/black"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputEmail"
@@ -144,9 +141,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="@dimen/_9sdp"
                 android:layout_marginTop="10dp"
-                android:text="Nhập password" />
+                android:text="Nhập password"
+                android:textColor="@color/black"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputPassword"
@@ -225,13 +223,13 @@
         android:onClick="onLoginClickRegister"
         android:src="@drawable/ic_add_img" />
     <LinearLayout
-        android:layout_width="250dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="677dp"
+        android:layout_marginTop="655dp"
         android:layout_marginEnd="58dp"
         android:background="@drawable/signupwith"
         android:orientation="horizontal">
@@ -253,19 +251,20 @@
             android:layout_marginLeft="30dp"
             android:gravity="center"
             android:text="Sign up with facebook"
+            android:textColor="@color/black"
             android:textSize="18sp" />
 
     </LinearLayout>
 
 
     <LinearLayout
-        android:layout_width="250dp"
+        android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="728dp"
+        android:layout_marginTop="720dp"
         android:layout_marginEnd="58dp"
         android:background="@drawable/signupwith"
         android:orientation="horizontal">
@@ -286,6 +285,7 @@
             android:layout_marginLeft="35dp"
             android:gravity="center"
             android:text="Sign up with google"
+            android:textColor="@color/black"
             android:textSize="18sp" />
 
     </LinearLayout>

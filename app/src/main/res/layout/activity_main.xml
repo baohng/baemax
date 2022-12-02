@@ -4,14 +4,190 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    tools:context=".MainActivity"
+    tools:context=".activities.MainActivity"
     android:background="@drawable/background">
 
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="30dp"-->
+<!--        android:id="@+id/cvBanner"-->
+<!--        tools:ignore="MissingConstraints">-->
+<!--        <ImageView-->
+<!--            android:id="@+id/imageBackground"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/bg_detail_menu"-->
+<!--            android:background="@drawable/banner_detail"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            android:scaleType="center"/>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="330dp">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginTop="67dp"-->
+<!--                android:fontFamily="@font/niramit_semibold"-->
+<!--                android:text="Buffalo Burger"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="40sp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginTop="124dp"-->
+<!--                android:src="@drawable/icont_star"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="73dp"-->
+<!--                android:layout_marginTop="124dp"-->
+<!--                android:fontFamily="@font/niramit_medium"-->
+<!--                android:text="5.0"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="368dp"-->
+<!--                android:layout_marginTop="129dp"-->
+<!--                android:src="@drawable/icon_heart"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginTop="176dp"-->
+<!--                android:src="@drawable/avt_restaurant"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="77dp"-->
+<!--                android:layout_marginTop="182dp"-->
+<!--                android:fontFamily="@font/niramit_semibolditalic"-->
+<!--                android:text="Devine Restaurant"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginTop="228dp"-->
+<!--                android:fontFamily="@font/niramit_semibolditalic"-->
+<!--                android:text="he secret to this recipe is using a little Worcestershire\n and BBQ sauce to add moisture that holds everything together while deepening the burger’s flavor.\n \nGround buffalo is available from Umami’s market, \nonline, and many high-end grocery stores. A couple of things to look for when you’re buying buffalo is to try \n and find organic and pasture raised."-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="15sp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:layout_marginStart="27dp"-->
+<!--                android:layout_marginTop="406dp"-->
+<!--                android:background="@drawable/bg_button"-->
+<!--                android:fontFamily="@font/niramit_semibold"-->
+<!--                android:text="-"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="60dp"-->
+<!--                android:layout_marginTop="400dp"-->
+<!--                android:fontFamily="@font/niramit_semibold"-->
+<!--                android:text="1"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/main_color"-->
+<!--                android:textSize="22dp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:layout_marginStart="80dp"-->
+<!--                android:layout_marginTop="406dp"-->
+<!--                android:background="@drawable/bg_btn_add"-->
+<!--                android:fontFamily="@font/niramit_semibold"-->
+<!--                android:text="+"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="15dp"-->
+<!--                android:layout_marginTop="450dp"-->
+<!--                android:src="@drawable/icon_location"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="35dp"-->
+<!--                android:layout_marginTop="445dp"-->
+<!--                android:fontFamily="@font/niramit_semibold"-->
+<!--                android:text="251 Pentonville Road King's Cross, London N1 9NG\n England"-->
+<!--                android:textColor="@color/black"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="287dp"-->
+<!--                android:layout_height="53dp"-->
+<!--                android:layout_marginStart="64dp"-->
+<!--                android:layout_marginTop="512dp"-->
+<!--                android:background="@drawable/bg_btn_order"-->
+<!--                android:fontFamily="@font/niramit_semibold"-->
+<!--                android:text="ORDER"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/main_color"-->
+<!--                android:textSize="25sp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </ScrollView>-->
 
     <TextView
         android:id="@+id/textView2"
         style="@style/textBold"
-        android:layout_width="157dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -21,7 +197,7 @@
         android:layout_marginEnd="233dp"
         android:text="BaeMax"
         android:textColor="@color/Green_main"
-        android:textSize="38dp" />
+        android:textSize="@dimen/_30ssp" />
 
     <RelativeLayout
         android:layout_width="371dp"
@@ -34,44 +210,36 @@
         android:layout_marginEnd="40dp"
         android:background="@drawable/login_background">
 
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/header_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/header_login_br">
+            android:background="@drawable/header_login_br"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
 
             <TextView
                 style="@style/textBold"
-                android:layout_width="248dp"
-                android:layout_height="33dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="27dp"
-                android:layout_marginEnd="68dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="ALREADY HAVE AN ACCOUNT"
-                android:textColor="@color/Green_main"
-                />
+                android:layout_marginStart="@dimen/_9sdp"
+                android:textColor="@color/Green_main" />
 
             <TextView
                 android:id="@+id/admin"
                 style="@style/loginButton"
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="240dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="5px"
+                android:layout_marginStart="@dimen/_12sdp"
                 android:gravity="center"
                 android:onClick="onLoginClickADMIN"
                 android:text="Admin"
-                android:textColor="@color/white" />
-        </RelativeLayout>
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp" />
+<!--                android:onClick="onLoginClickADMIN"/>-->
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -83,9 +251,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="@dimen/_8sdp"
                 android:layout_marginTop="20dp"
-                android:text="Nhập email" />
+                android:text="Nhập email"
+                android:textColor="@color/black"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputEmail"
@@ -105,9 +274,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="@dimen/_8sdp"
                 android:layout_marginTop="30dp"
-                android:text="Nhập password" />
+                android:text="Nhập password"
+                android:textColor="@color/black"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputPassword"
@@ -129,8 +299,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="remember password" />
+                android:text="Remember password" />
 
+
+<!--        id testing transfer activity-->
             <Button
                 android:id="@+id/login_button_login1"
                 style="@style/loginButton"
@@ -141,7 +313,6 @@
                 android:gravity="center"
                 android:text="Sign in"
                 android:elevation="2dp"
-
                 />
 
 
@@ -165,8 +336,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginRight="11dp"
         android:layout_marginBottom="30dp"
-        android:onClick="onLoginClick"
-        android:src="@drawable/ic_add_img" />
+        android:src="@drawable/ic_add_img"
+        android:onClick="onLoginClick"/>
 
     <LinearLayout
         android:layout_width="250dp"
@@ -196,7 +367,8 @@
             android:layout_marginLeft="30dp"
             android:gravity="center"
             android:text="Sign in with facebook"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 
@@ -228,7 +400,8 @@
             android:layout_marginLeft="35dp"
             android:gravity="center"
             android:text="Sign in with google"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 

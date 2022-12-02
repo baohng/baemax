@@ -1,4 +1,4 @@
-package ute.application.baemax;
+package ute.application.baemax.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import ute.application.baemax.R;
 
 public class LoginAdmin extends AppCompatActivity {
     EditText editTextEmail_1, editTextPassword_1;

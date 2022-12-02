@@ -1,4 +1,4 @@
-package ute.application.baemax;
+package ute.application.baemax.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -42,8 +42,6 @@ public class MainActivity extends AppCompatActivity {
                 login();
             }
         });
-
-
     }
 
 
@@ -54,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void onLoginClickADMIN(View View){
-        startActivity(new Intent(this,LoginAdmin.class));
+        startActivity(new Intent(this, LoginAdmin.class));
         overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
 
     }
