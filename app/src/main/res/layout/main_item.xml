@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_food"
+            android:layout_width="138dp"
+            android:layout_height="111dp"
+            android:src="@drawable/burgers_buffalo"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/nametext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/img_food"
+            android:text="Food Name"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pricetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nametext"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/img_food"
+            android:text="Price"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/describetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pricetext"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/img_food"
+            android:text="Describle"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/startext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/describetext"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/img_food"
+            android:text="Star"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="382dp"
+            android:layout_height="82dp"
+            android:layout_below="@+id/startext"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:text="Edit"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:text="Delete"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
