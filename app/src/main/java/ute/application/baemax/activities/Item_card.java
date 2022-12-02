@@ -1,14 +1,16 @@
-package ute.application.baemax;
+package ute.application.baemax.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import ute.application.baemax.R;
+
+public class Item_card extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_item_card);
     }
 }
