@@ -1,4 +1,4 @@
-package ute.application.baemax;
+package ute.application.baemax.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -14,6 +14,8 @@ import android.widget.SearchView;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.FirebaseDatabase;
+
+import ute.application.baemax.R;
 
 public class BurgersActivity extends AppCompatActivity {
     RecyclerView recyclerView;

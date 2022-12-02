@@ -1,4 +1,4 @@
-package ute.application.baemax;
+package ute.application.baemax.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +15,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import ute.application.baemax.R;
 
 public class AddActivity extends AppCompatActivity {
 

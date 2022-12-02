@@ -1,4 +1,4 @@
-package ute.application.baemax;
+package ute.application.baemax.activities;
 
 public class MainModel {
 

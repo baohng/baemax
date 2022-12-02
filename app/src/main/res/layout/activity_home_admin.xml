@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home_admin"
+    tools:context=".activities.home_admin"
     android:background="@drawable/background_home_admin"
     android:layout_gravity="center"
     android:gravity="center"
