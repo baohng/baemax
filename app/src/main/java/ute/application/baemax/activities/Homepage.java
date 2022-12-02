@@ -2,7 +2,12 @@ package ute.application.baemax.activities;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,6 +23,11 @@ public class Homepage extends AppCompatActivity {
     private ListFoodAdapter listFoodAdapter;
     private RecyclerView rcvCategory;
     private CategoryAdapter categoryAdapter;
+
+    //Testing transfer button
+    Button btnOrderHomepage;
+    //
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +45,10 @@ public class Homepage extends AppCompatActivity {
         rcvCategory.setLayoutManager(linearLayoutManager);
         categoryAdapter.setData(getListCategory());
         rcvCategory.setAdapter(categoryAdapter);
+
+        //Testing transfer
+        setOrderActivity();
+        //
     }
     private List<Category> getListCategory(){
         List<Category> listCategory = new ArrayList<>();
@@ -57,5 +71,16 @@ public class Homepage extends AppCompatActivity {
         listFood.add(new Food(R.drawable.foot_main_3,"Burgers hot"));
         listListFood.add(new ListFood("Food for you", listFood));
         return listListFood ;
+    }
+
+    public void setOrderActivity(){
+        btnOrderHomepage = (Button) findViewById(R.id.btnORDERHomepage);
+        btnOrderHomepage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Homepage.this,ListViewActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
