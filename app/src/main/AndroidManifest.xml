@@ -28,10 +28,13 @@
             android:name=".BurgersActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".AdminActivity"
             android:exported="false" />
         <activity
-            android:name=".AdminActivity"
+            android:name=".AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

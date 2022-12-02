@@ -20,4 +20,9 @@ public class home_admin extends AppCompatActivity {
         overridePendingTransition(R.anim.slide_in_left,R.anim.stay);
 
     }
+    public void onBurgersClick(View View){
+        startActivity(new Intent(this,BurgersActivity.class));
+        overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
+
+    }
 }
