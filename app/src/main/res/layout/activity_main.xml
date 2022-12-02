@@ -234,6 +234,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_12sdp"
                 android:gravity="center"
+                android:onClick="onLoginClickADMIN"
                 android:text="Admin"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_10ssp" />
@@ -303,7 +304,7 @@
 
 <!--        id testing transfer activity-->
             <Button
-                android:id="@+id/btnStartActivity"
+                android:id="@+id/login_button_login1"
                 style="@style/loginButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -316,6 +317,8 @@
 
 
         </LinearLayout>
+
+
     </RelativeLayout>
 
     <View
@@ -352,8 +355,8 @@
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:src="@drawable/img"
             android:layout_marginLeft="20dp"
+            android:src="@drawable/img"
 
             />
 

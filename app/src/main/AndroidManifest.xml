@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="ute.application.baemax">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,16 +16,52 @@
         android:theme="@style/Theme.Baemax"
         tools:targetApi="31">
         <activity
-            android:name=".activities.Payfood"
+            android:name=".activities.DrinksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddDrinksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PizzasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddPizzasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddSandwichsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SandwichsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.home_admin"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LoginAdmin"
             android:exported="false" />
         <activity
             android:name=".activities.Profile"
             android:exported="false" />
         <activity
+            android:name=".activities.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.BurgersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddBurgersActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.Item_card"
             android:exported="false" />
         <activity
-            android:name=".activities.CartActivity"
+            android:name=".activities.Homepage"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Payfood"
             android:exported="false" />
         <activity
             android:name=".activities.menu_detail"
@@ -32,13 +71,10 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".activities.LoginAdmin"
-            android:exported="false" />
-        <activity
             android:name=".activities.Register"
             android:exported="false" />
         <activity
-            android:name=".activities.Homepage"
+            android:name=".activities.ListViewActivity"
             android:exported="false" />
         <activity
             android:name=".activities.ListViewActivity"
@@ -48,8 +84,10 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
+
 </manifest>
