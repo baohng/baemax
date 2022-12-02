@@ -1,4 +1,4 @@
-package ute.application.baemax;
+package ute.application.baemax.activities;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -6,13 +6,14 @@ import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.List;
 
-import card.Card;
-import category.Category;
-import category.CategoryAdapter;
-import food.Food;
-import listFoods.ListFood;
-import listFoods.ListFoodAdapter;
-public class home_activity extends AppCompatActivity {
+import ute.application.baemax.R;
+import ute.application.baemax.dao.Card;
+import ute.application.baemax.dao.Category;
+import ute.application.baemax.adapters.CategoryAdapter;
+import ute.application.baemax.dao.Food;
+import ute.application.baemax.dao.ListFood;
+import ute.application.baemax.adapters.ListFoodAdapter;
+public class Homepage extends AppCompatActivity {
     private  RecyclerView rcvFoodList;
     private ListFoodAdapter listFoodAdapter;
     private RecyclerView rcvCategory;
@@ -20,7 +21,7 @@ public class home_activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_homepage);
         rcvFoodList = findViewById(R.id.rcv_list);
         listFoodAdapter = new ListFoodAdapter(this);
         LinearLayoutManager linearLayoutManager1 = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);

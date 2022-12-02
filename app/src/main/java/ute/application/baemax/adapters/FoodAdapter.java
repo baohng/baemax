@@ -1,4 +1,4 @@
-package food;
+package ute.application.baemax.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 import ute.application.baemax.R;
-import food.Food;
+import ute.application.baemax.dao.Food;
 public class FoodAdapter  extends RecyclerView.Adapter<FoodAdapter.BookViewHolder> {
     private List<Food> mFoods;
     public void setData(List<Food> list) {

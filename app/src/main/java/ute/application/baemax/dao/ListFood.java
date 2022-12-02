@@ -1,8 +1,6 @@
-package listFoods;
+package ute.application.baemax.dao;
 
 import java.util.List;
-
-import food.Food;
 
 public class ListFood {
     private String nameCategory;

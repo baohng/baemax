@@ -1,8 +1,7 @@
-package card;
+package ute.application.baemax.adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -12,6 +11,7 @@ import java.text.BreakIterator;
 import java.util.List;
 
 import ute.application.baemax.R;
+import ute.application.baemax.dao.Card;
 
 public class CardAdapter  extends RecyclerView.Adapter<CardAdapter.CardViewHolder> {
     private List<Card> mCards;

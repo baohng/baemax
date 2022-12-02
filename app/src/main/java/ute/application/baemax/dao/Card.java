@@ -1,4 +1,4 @@
-package card;
+package ute.application.baemax.dao;
 
 public class Card {
     private  int resourceId;

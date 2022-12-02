@@ -1,4 +1,4 @@
-package food;
+package ute.application.baemax.dao;
 
 public class Food {
     private  int resourceId;

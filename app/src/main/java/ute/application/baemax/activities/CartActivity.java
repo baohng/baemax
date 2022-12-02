@@ -1,10 +1,12 @@
-package ute.application.baemax;
+package ute.application.baemax.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import ute.application.baemax.R;
 
 public class CartActivity extends AppCompatActivity {
 
@@ -20,7 +22,7 @@ public class CartActivity extends AppCompatActivity {
 
     }
     public void onLoginClickADMIN(View View){
-        startActivity(new Intent(this,LoginAdmin.class));
+        startActivity(new Intent(this, LoginAdmin.class));
         overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
 
     }

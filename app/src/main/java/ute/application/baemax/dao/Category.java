@@ -1,7 +1,5 @@
-package category;
+package ute.application.baemax.dao;
 import java.util.List;
-import card.Card;
-import food.Food;
 
 public class Category {
     private String nameCategory;

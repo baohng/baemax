@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Item_card">
+    tools:context=".activities.Item_card">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -14,7 +14,7 @@
         android:id="@+id/img_item_card"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src=""/>
+        />
 
     <LinearLayout
         android:layout_width="wrap_content"

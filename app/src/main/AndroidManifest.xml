@@ -13,35 +13,35 @@
         android:theme="@style/Theme.Baemax"
         tools:targetApi="31">
         <activity
-            android:name=".Payfood"
+            android:name=".activities.Payfood"
             android:exported="false" />
         <activity
-            android:name=".Profile"
+            android:name=".activities.Profile"
             android:exported="false" />
         <activity
-            android:name=".Item_card"
+            android:name=".activities.Item_card"
             android:exported="false" />
         <activity
-            android:name=".CartActivity"
+            android:name=".activities.CartActivity"
             android:exported="false" />
         <activity
-            android:name=".menu_detail"
+            android:name=".activities.menu_detail"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".LoginAdmin"
+            android:name=".activities.LoginAdmin"
             android:exported="false" />
         <activity
-            android:name=".Register"
+            android:name=".activities.Register"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.Homepage"
             android:exported="false" />
         <activity
-            android:name=".home_activity"
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

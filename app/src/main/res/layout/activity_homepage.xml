@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".activities.Homepage"
     android:background="#FAF8EB"
     >
     <ScrollView
@@ -36,7 +36,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_header"></ImageView>
+                    android:src="@drawable/ic_header"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -50,7 +50,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/check"></ImageView>
+                        android:src="@drawable/check"/>
 
                     <TextView
                         android:id="@+id/text1"
@@ -67,7 +67,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/avatar"></ImageView>
+                    android:src="@drawable/avatar"/>
             </LinearLayout>
 
             <LinearLayout
@@ -83,7 +83,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_search"></ImageView>
+                    android:src="@drawable/ic_search"/>
 
                 <EditText
                     android:id="@+id/search"
@@ -91,11 +91,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="40dp"
-                    android:hint="Search burger" />
+                    android:hint="Search burger"/>
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/icon"></ImageView>
+                    android:src="@drawable/icon"/>
             </LinearLayout>
             <RelativeLayout
                 android:layout_width="372dp"

@@ -3,6 +3,40 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/drawable/btn_close.xml" value="0.2325" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/drawable/custom_button.xml" value="0.2325" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/drawable/item_radius.xml" value="0.2535" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/drawable/radius.xml" value="0.2325" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/drawable/radius_card.xml" value="0.2325" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/drawable/radius_carditem.xml" value="0.2325" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/food_list.xml" value="0.24010416666666667" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/home_activity.xml" value="0.253125" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/item_card.xml" value="0.2390625" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/item_card1.xml" value="0.536" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/item_card2.xml" value="0.25416666666666665" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/item_category.xml" value="0.2390625" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/item_category2.xml" value="0.24010416666666667" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/successoder.xml" value="0.253125" />
+        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/test.xml" value="0.536" />
+        <entry key="..\:/Code/MobileDevelopment/Baemax/app/src/main/res/drawable/button_background_green.xml" value="0.2205" />
+        <entry key="..\:/Code/MobileDevelopment/Baemax/app/src/main/res/layout/activity_home.xml" value="0.15789473684210525" />
+        <entry key="..\:/Code/MobileDevelopment/Baemax/app/src/main/res/layout/activity_item_card.xml" value="0.1" />
+        <entry key="..\:/Code/MobileDevelopment/Baemax/app/src/main/res/layout/activity_main.xml" value="0.15789473684210525" />
+        <entry key="..\:/Code/MobileDevelopment/Baemax/app/src/main/res/layout/activity_profile.xml" value="0.15789473684210525" />
+        <entry key="..\:/Code/MobileDevelopment/Baemax/app/src/main/res/layout/activity_register.xml" value="0.15789473684210525" />
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/drawable/button_background_green.xml" value="0.1845" />
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/drawable/header_login_br.xml" value="0.1845" />
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/drawable/ic_add_img.xml" value="0.1" />
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/drawable/ic_side_bg.xml" value="0.1" />
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/drawable/login_background.xml" value="0.1845" />
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/drawable/register_background.xml" value="0.1905" />
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/drawable/signupwith.xml" value="0.1905" />
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/layout/activity_login_admin.xml" value="0.44575163398692813" />
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/LE NA/LeNa_CNTT/HK122/BTCK_LTDD/order-food-service/app/src/main/res/drawable/banner_detail.xml" value="0.176" />
         <entry key="..\:/LE NA/LeNa_CNTT/HK122/BTCK_LTDD/order-food-service/app/src/main/res/drawable/bg_btn_add.xml" value="0.176" />
         <entry key="..\:/LE NA/LeNa_CNTT/HK122/BTCK_LTDD/order-food-service/app/src/main/res/drawable/bg_btn_order.xml" value="0.176" />
@@ -31,35 +65,6 @@
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/fragment_sandwich.xml" value="0.2" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/item_view.xml" value="0.2" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
-        <entry key="..\:/Code/MobileDevelopment/Baemax/app/src/main/res/layout/activity_profile.xml" value="0.15789473684210525" />
-        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/drawable/button_background_green.xml" value="0.1845" />
-        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/drawable/header_login_br.xml" value="0.1845" />
-        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/drawable/ic_add_img.xml" value="0.1" />
-        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/drawable/ic_side_bg.xml" value="0.1" />
-        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/drawable/login_background.xml" value="0.1845" />
-        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/drawable/register_background.xml" value="0.1905" />
-        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/drawable/signupwith.xml" value="0.1905" />
-        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/layout/activity_login.xml" value="0.264" />
-        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/layout/activity_login_admin.xml" value="0.44575163398692813" />
-        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/layout/activity_register.xml" value="0.264" />
-        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/drawable/btn_close.xml" value="0.2325" />
-        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/drawable/custom_button.xml" value="0.2325" />
-        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/drawable/item_radius.xml" value="0.2535" />
-        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/drawable/radius.xml" value="0.2325" />
-        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/drawable/radius_card.xml" value="0.2325" />
-        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/drawable/radius_carditem.xml" value="0.2325" />
-        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
-        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/food_list.xml" value="0.24010416666666667" />
-        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/home_activity.xml" value="0.253125" />
-        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/item_card.xml" value="0.2390625" />
-        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/item_card1.xml" value="0.536" />
-        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/item_card2.xml" value="0.25416666666666665" />
-        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/item_category.xml" value="0.2390625" />
-        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/item_category2.xml" value="0.24010416666666667" />
-        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/successoder.xml" value="0.253125" />
-        <entry key="..\:/ANDROID STUDIO/AndroidStudioProjects/order-food-service/app/src/main/res/layout/test.xml" value="0.536" />
       </map>
     </option>
   </component>
