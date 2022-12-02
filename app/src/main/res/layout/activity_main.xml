@@ -68,9 +68,9 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="5px"
                 android:gravity="center"
+                android:onClick="onLoginClickADMIN"
                 android:text="Admin"
-                android:textColor="@color/white"
-                android:onClick="onLoginClickADMIN"/>
+                android:textColor="@color/white" />
         </RelativeLayout>
 
         <LinearLayout
@@ -132,6 +132,7 @@
                 android:text="remember password" />
 
             <Button
+                android:id="@+id/login_button_login1"
                 style="@style/loginButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -181,8 +182,8 @@
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:src="@drawable/img"
             android:layout_marginLeft="20dp"
+            android:src="@drawable/img"
 
             />
 

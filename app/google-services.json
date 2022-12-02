@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "76706963567",
+    "firebase_url": "https://android-dev-996ff-default-rtdb.firebaseio.com",
+    "project_id": "android-dev-996ff",
+    "storage_bucket": "android-dev-996ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76706963567:android:ddac345d87929218e6ed9a",
+        "android_client_info": {
+          "package_name": "ute.application.baemax"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76706963567-r71l15ufr37iid3jn0bsujpefsol8fv3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ute.application.baemax",
+            "certificate_hash": "72a8435b51e444de8c1de60f097429e1ff4809fd"
+          }
+        },
+        {
+          "client_id": "76706963567-re0tto00khji7hl3jh3hj9upvsapj5d2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ute.application.baemax",
+            "certificate_hash": "6c03bc84b81cd925fd6353f50f029a44b941087e"
+          }
+        },
+        {
+          "client_id": "76706963567-draae847t2pcemralp71b9d406pv85gk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKex4rdOa_QC7nx-cQQ9WZk1IOFTL-emc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76706963567-draae847t2pcemralp71b9d406pv85gk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
