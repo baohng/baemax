@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Add new Food"
+        android:text="Add Drinks"
         android:background="@color/purple_500"
         android:textSize="25dp"
         android:gravity="center"
@@ -32,7 +32,7 @@
         android:layout_marginRight="10dp"
         android:background="@drawable/rounded"
         android:gravity="center"
-        android:id="@+id/txtName"
+        android:id="@+id/txtNameDrink"
         />
 
     <TextView
@@ -52,7 +52,7 @@
         android:layout_marginRight="10dp"
         android:background="@drawable/rounded"
         android:gravity="center"
-        android:id="@+id/txtPrice"
+        android:id="@+id/txtPriceDrink"
         />
     <TextView
         android:layout_width="match_parent"
@@ -71,7 +71,7 @@
         android:layout_marginRight="10dp"
         android:background="@drawable/rounded"
         android:gravity="center"
-        android:id="@+id/txtDescribe"
+        android:id="@+id/txtDescribeDrink"
         />
     <TextView
         android:layout_width="match_parent"
@@ -90,7 +90,7 @@
         android:layout_marginRight="10dp"
         android:background="@drawable/rounded"
         android:gravity="center"
-        android:id="@+id/txtStar"
+        android:id="@+id/txtStarDrink"
         />
     <TextView
         android:layout_width="match_parent"
@@ -109,7 +109,7 @@
         android:layout_marginRight="10dp"
         android:background="@drawable/rounded"
         android:gravity="center"
-        android:id="@+id/txtImageUrl"
+        android:id="@+id/txtImageUrlDrink"
         />
 
     <Button
@@ -123,7 +123,7 @@
         android:textAllCaps="false"
         android:background="@drawable/rounded"
         android:gravity="center"
-        android:id="@+id/btnAdd"
+        android:id="@+id/btnAddDrink"
         />
     <Button
         android:layout_width="match_parent"
@@ -136,6 +136,6 @@
         android:textAllCaps="false"
         android:background="@drawable/rounded"
         android:gravity="center"
-        android:id="@+id/btnBack"
+        android:id="@+id/btnBackDrink"
         />
 </LinearLayout>

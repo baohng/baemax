@@ -18,23 +18,23 @@ import java.util.Map;
 
 import ute.application.baemax.R;
 
-public class AddActivity extends AppCompatActivity {
+public class AddPizzasActivity extends AppCompatActivity {
 
     EditText name, price, describe, star, surl;
     Button btnAdd, btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add);
+        setContentView(R.layout.activity_add_pizzas);
 
-        name = (EditText) findViewById(R.id.txtName);
-        price = (EditText) findViewById(R.id.txtPrice);
-        describe= (EditText) findViewById(R.id.txtDescribe);
-        star= (EditText) findViewById(R.id.txtStar);
-        surl = (EditText) findViewById(R.id.txtImageUrl);
+        name = (EditText) findViewById(R.id.txtNamePizza);
+        price = (EditText) findViewById(R.id.txtPricePizza);
+        describe= (EditText) findViewById(R.id.txtDescribePizza);
+        star= (EditText) findViewById(R.id.txtStarPizza);
+        surl = (EditText) findViewById(R.id.txtImageUrlPizza);
 
-        btnAdd = (Button) findViewById(R.id.btnAdd);
-        btnBack = (Button) findViewById(R.id.btnBack);
+        btnAdd = (Button) findViewById(R.id.btnAddPizza);
+        btnBack = (Button) findViewById(R.id.btnBackPizza);
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,18 +60,18 @@ public class AddActivity extends AppCompatActivity {
         map.put("star", star.getText().toString());
         map.put("surl", surl.getText().toString());
 
-        FirebaseDatabase.getInstance().getReference().child("burgers").push()
+        FirebaseDatabase.getInstance().getReference().child("pizzas").push()
                 .setValue(map)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
-                        Toast.makeText(AddActivity.this, "Data Inserted Successfully.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddPizzasActivity.this, "Data Inserted Successfully.", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(AddActivity.this, "Error while Insertion.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddPizzasActivity.this, "Error while Insertion.", Toast.LENGTH_SHORT).show();
                     }
                 });
     }

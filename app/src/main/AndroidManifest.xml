@@ -16,16 +16,34 @@
         android:theme="@style/Theme.Baemax"
         tools:targetApi="31">
         <activity
+            android:name=".activities.DrinksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddDrinksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PizzasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddPizzasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddSandwichsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SandwichsActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.home_admin"
             android:exported="false" />
         <activity
             android:name=".activities.LoginAdmin"
             android:exported="false" />
         <activity
-            android:name=".activities.Payfood"
+            android:name=".activities.Profile"
             android:exported="false" />
         <activity
-            android:name=".activities.Profile"
+            android:name=".activities.CartActivity"
             android:exported="false" />
         <activity
             android:name=".activities.BurgersActivity"
@@ -34,13 +52,16 @@
             android:name=".activities.AdminActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.AddActivity"
+            android:name=".activities.AddBurgersActivity"
             android:exported="false" />
         <activity
             android:name=".activities.Item_card"
             android:exported="false" />
         <activity
-            android:name=".activities.CartActivity"
+            android:name=".activities.Homepage"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Payfood"
             android:exported="false" />
         <activity
             android:name=".activities.menu_detail"
@@ -53,7 +74,17 @@
             android:name=".activities.Register"
             android:exported="false" />
         <activity
-            android:name=".activities.Homepage"
+            android:name=".activities.ListViewActivity"
             android:exported="false" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
+
 </manifest>

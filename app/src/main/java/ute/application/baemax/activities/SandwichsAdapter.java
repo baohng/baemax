@@ -29,7 +29,7 @@ import java.util.Map;
 import de.hdodenhof.circleimageview.CircleImageView;
 import ute.application.baemax.R;
 
-public class BurgersAdapter extends FirebaseRecyclerAdapter<MainModel,BurgersAdapter.myViewHolder> {
+public class SandwichsAdapter extends FirebaseRecyclerAdapter<MainModel,SandwichsAdapter.myViewHolder> {
 
     /**
      * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
@@ -37,7 +37,7 @@ public class BurgersAdapter extends FirebaseRecyclerAdapter<MainModel,BurgersAda
      *
      * @param options
      */
-    public BurgersAdapter(@NonNull FirebaseRecyclerOptions<MainModel> options) {
+    public SandwichsAdapter(@NonNull FirebaseRecyclerOptions<MainModel> options) {
         super(options);
     }
 
@@ -51,27 +51,27 @@ public class BurgersAdapter extends FirebaseRecyclerAdapter<MainModel,BurgersAda
         holder.describe.setText(model.getDescribe());
         holder.star.setText(model.getStar());
         Glide.with(holder.img.getContext())
-               .load(model.getSurl())
-             .into(holder.img);
+                .load(model.getSurl())
+                .into(holder.img);
 
         holder.btnEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 final DialogPlus dialogPlus = DialogPlus.newDialog(holder.img.getContext())
-                        .setContentHolder(new ViewHolder(R.layout.update_burgers))
+                        .setContentHolder(new ViewHolder(R.layout.update_sandwichs))
                         .setExpanded(true,1500)
                         .create();
 
 
                 View view1 = dialogPlus.getHolderView();
 
-                EditText name = view1.findViewById(R.id.txtNameBurger);
-                EditText price= view1.findViewById(R.id.txtPriceBurger);
-                EditText describe = view1.findViewById(R.id.txtDescribeBurger);
-                EditText star = view1.findViewById(R.id.txtStarBurger);
-                EditText surl = view1.findViewById(R.id.txtImageUrlBurger);
+                EditText name = view1.findViewById(R.id.txtNameSandwich);
+                EditText price= view1.findViewById(R.id.txtPriceSandwich);
+                EditText describe = view1.findViewById(R.id.txtDescribeSandwich);
+                EditText star = view1.findViewById(R.id.txtStarSandwich);
+                EditText surl = view1.findViewById(R.id.txtImageUrlSandwich);
 
-                Button btnUpdate = view1.findViewById(R.id.btnUpdateBurger);
+                Button btnUpdate = view1.findViewById(R.id.btnUpdateSandwich);
 
                 name.setText(model.getName());
                 price.setText(model.getPrice());
@@ -90,7 +90,7 @@ public class BurgersAdapter extends FirebaseRecyclerAdapter<MainModel,BurgersAda
                         map.put("describe",describe.getText().toString());
                         map.put("star",star.getText().toString());
                         map.put("surl",surl.getText().toString());
-                        FirebaseDatabase.getInstance().getReference().child("burgers")
+                        FirebaseDatabase.getInstance().getReference().child("sandwichs")
                                 .child(getRef(position).getKey()).updateChildren(map)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
@@ -124,7 +124,7 @@ public class BurgersAdapter extends FirebaseRecyclerAdapter<MainModel,BurgersAda
                 builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        FirebaseDatabase.getInstance().getReference().child("burgers")
+                        FirebaseDatabase.getInstance().getReference().child("sandwichs")
                                 .child(getRef(position).getKey()).removeValue();
                     }
                 });

@@ -17,33 +17,33 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import ute.application.baemax.R;
 
-public class BurgersActivity extends AppCompatActivity {
+public class DrinksActivity extends AppCompatActivity {
     RecyclerView recyclerView;
-    BurgersAdapter burgersAdapter;
+    DrinksAdapter drinksAdapter;
 
     FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_burgers);
+        setContentView(R.layout.activity_drinks);
 
-        recyclerView = (RecyclerView) findViewById(R.id.rv_burgers);
+        recyclerView = (RecyclerView) findViewById(R.id.rv_drinks);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         FirebaseRecyclerOptions<MainModel> options =
                 new FirebaseRecyclerOptions.Builder<MainModel>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("burgers"),MainModel.class)
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("drinks"),MainModel.class)
                         .build();
-        burgersAdapter = new BurgersAdapter(options);
-        recyclerView.setAdapter(burgersAdapter);
+        drinksAdapter = new DrinksAdapter(options);
+        recyclerView.setAdapter(drinksAdapter);
 
-        floatingActionButton = (FloatingActionButton) findViewById(R.id.add_burgers);
+        floatingActionButton = (FloatingActionButton) findViewById(R.id.add_drinks);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(BurgersActivity.this, AddBurgersActivity.class);
+                Intent i = new Intent(DrinksActivity.this, AddDrinksActivity.class);
                 startActivity(i);
             }
         });
@@ -52,13 +52,13 @@ public class BurgersActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-       burgersAdapter.startListening();
+        drinksAdapter.startListening();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        burgersAdapter.stopListening();
+        drinksAdapter.stopListening();
     }
 
     @Override
@@ -87,11 +87,11 @@ public class BurgersActivity extends AppCompatActivity {
     private  void txtSearch(String str){
         FirebaseRecyclerOptions<MainModel> options =
                 new FirebaseRecyclerOptions.Builder<MainModel>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("burgers").orderByChild("name").startAt(str).endAt(str+"~"),MainModel.class)
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("drinks").orderByChild("name").startAt(str).endAt(str+"~"),MainModel.class)
                         .build();
 
-        burgersAdapter = new BurgersAdapter(options);
-        burgersAdapter.startListening();
-        recyclerView.setAdapter(burgersAdapter);
+        drinksAdapter = new DrinksAdapter(options);
+        drinksAdapter.startListening();
+        recyclerView.setAdapter(drinksAdapter);
     }
 }

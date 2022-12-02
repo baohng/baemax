@@ -27,4 +27,23 @@ public class home_admin extends AppCompatActivity {
         overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
 
     }
+
+    public void onSandwichsClick(View View){
+        startActivity(new Intent(this,SandwichsActivity.class));
+        overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
+
+    }
+
+    public void onPizzasClick(View View){
+        startActivity(new Intent(this,PizzasActivity.class));
+        overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
+
+    }
+
+    public void onDrinksClick(View View){
+        startActivity(new Intent(this,DrinksActivity.class));
+        overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
+
+    }
 }
+
