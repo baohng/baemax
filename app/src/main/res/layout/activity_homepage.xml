@@ -18,15 +18,16 @@
             android:orientation="vertical"
             android:layout_gravity="center_horizontal"
             android:padding="10dp">
+
             <LinearLayout
                 android:id="@+id/linearLayout"
-                android:layout_width="390dp"
-                android:layout_height="80dp"
+                android:layout_width="384dp"
+                android:layout_height="44dp"
+                android:layout_marginBottom="20dp"
                 android:background="#fff"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:padding="10dp"
-                android:layout_marginBottom="20dp"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="10dp"
                 tools:layout_editor_absoluteY="7dp">
@@ -36,7 +37,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_header"/>
+                    android:src="@drawable/ic_header" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -50,7 +51,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/check"/>
+                        android:src="@drawable/check" />
 
                     <TextView
                         android:id="@+id/text1"
@@ -62,28 +63,30 @@
                         android:textColor="#000"
                         android:textStyle="bold|italic" />
                 </LinearLayout>
+
                 <ImageView
                     android:id="@+id/avatar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/avatar"/>
+                    android:src="@drawable/avatar" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="390dp"
                 android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
                 android:background="@drawable/radius"
                 android:gravity="center"
+                android:layout_marginTop="-15dp"
                 tools:ignore="MissingConstraints"
-                android:layout_marginBottom="20dp"
                 tools:layout_editor_absoluteX="10dp"
                 tools:layout_editor_absoluteY="107dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_search"/>
+                    android:src="@drawable/ic_search" />
 
                 <EditText
                     android:id="@+id/search"
@@ -91,19 +94,21 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="40dp"
-                    android:hint="Search burger"/>
+                    android:hint="Search burger" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/icon"/>
+                    android:src="@drawable/icon" />
             </LinearLayout>
+
             <RelativeLayout
-                android:layout_width="372dp"
-                android:layout_height="199dp"
+                android:layout_width="374dp"
+                android:layout_height="168dp"
+                android:layout_marginTop="-15dp"
+                android:layout_marginBottom="20dp"
                 android:background="@drawable/banner"
                 tools:ignore="MissingConstraints"
-                android:layout_marginBottom="20dp"
                 tools:layout_editor_absoluteX="19dp"
                 tools:layout_editor_absoluteY="185dp">
 
@@ -111,26 +116,48 @@
                     android:id="@+id/btnORDERHomepage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="6dp"
                     android:layout_marginLeft="180dp"
-                    android:layout_marginTop="120dp"
+                    android:layout_marginTop="104dp"
+                    android:layout_marginEnd="233dp"
+                    android:layout_marginBottom="16dp"
                     android:background="@drawable/bg_order_btn"
                     android:backgroundTint="@color/btnColor"
                     android:padding="10dp"
                     android:text="ORDER NOW"
                     android:textSize="20dp" />
             </RelativeLayout>
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rcv_category"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="391dp"
+                android:layout_height="154dp"
+                android:layout_marginTop="-15dp"
                 tools:ignore="MissingConstraints" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rcv_list"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_width="393dp"
+                android:layout_height="212dp"
+                android:layout_marginTop="5dp"
                 tools:ignore="MissingConstraints" />
         </LinearLayout>
     </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigator"
+        android:layout_width="409dp"
+        android:layout_height="56dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:background="@color/white"
+        app:menu="@menu/bottom_nav_menu"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

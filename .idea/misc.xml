@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/drawable/back_icon.xml" value="0.1535" />
+        <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/drawable/btn_close.xml" value="0.1535" />
+        <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/drawable/btn_order_card.xml" value="0.1535" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/drawable/search_icon.xml" value="0.1535" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/activity_add.xml" value="0.20416666666666666" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/activity_add_burgers.xml" value="0.20416666666666666" />
@@ -12,11 +14,14 @@
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/activity_add_sandwichs.xml" value="0.19010416666666666" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/activity_admin.xml" value="0.20416666666666666" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/activity_burgers.xml" value="0.20416666666666666" />
+        <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/activity_cart.xml" value="0.20416666666666666" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/activity_drinks.xml" value="0.19010416666666666" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/activity_home_admin.xml" value="0.20416666666666666" />
+        <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/activity_homepage.xml" value="0.20416666666666666" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/activity_list_view.xml" value="0.20416666666666666" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/activity_menu_detail.xml" value="0.20416666666666666" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/activity_pizzas.xml" value="0.19010416666666666" />
+        <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/activity_profile.xml" value="0.20416666666666666" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/activity_sandwichs.xml" value="0.20416666666666666" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/food_list.xml" value="0.20416666666666666" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/fragment_burgers.xml" value="0.20416666666666666" />
@@ -30,6 +35,7 @@
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/update_pizzas.xml" value="0.20416666666666666" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/update_popup.xml" value="0.20416666666666666" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/layout/update_sandwichs.xml" value="0.203125" />
+        <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/menu/search.xml" value="0.20416666666666666" />
       </map>
     </option>

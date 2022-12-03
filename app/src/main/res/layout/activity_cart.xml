@@ -9,11 +9,10 @@
 
     <ImageView
         android:id="@+id/img_banner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/banner_card1"
-         />
+        android:src="@drawable/banner_card1" />
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
@@ -29,50 +28,62 @@
             android:layout_marginTop="35dp"
             android:layout_marginStart="15dp"
             />
+
         <ListView
             android:id="@+id/lv_card"
-            android:layout_width="wrap_content"
-            android:layout_height="400dp"
-            />
+            android:layout_width="375dp"
+            android:layout_height="303dp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-        <Button
-            android:layout_width="267dp"
-            android:layout_height="63dp"
-            android:text="Order"
-            android:textSize="20sp"
-            android:fontFamily="@font/niramit_semibold"
-            android:textColor="@color/white"
-            android:background="@drawable/btn_order_card"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="47dp"
-            />
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:orientation="vertical">
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Item.Total"
-                   android:textColor="@color/black"
-                   android:fontFamily="@font/niramit_regular"
-                   android:textSize="15sp"
-                   android:layout_marginTop="47dp"
-                   android:layout_marginStart="34dp"/>
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="15.05$"
-                   android:textColor="@color/black"
-                   android:fontFamily="@font/niramit_semibold"
-                   android:textSize="20sp"
-                   android:layout_marginStart="34dp"/>
-           </LinearLayout>
+            <Button
+                android:layout_width="267dp"
+                android:layout_height="63dp"
+                android:text="Order"
+                android:textSize="20sp"
+                android:fontFamily="@font/niramit_semibold"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_order_card"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="47dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item.Total"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/niramit_regular"
+                    android:textSize="15sp"
+                    android:layout_marginTop="47dp"
+                    android:layout_marginStart="34dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15.05$"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/niramit_semibold"
+                    android:textSize="20sp"
+                    android:layout_marginStart="34dp"/>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigator"
+        android:layout_width="409dp"
+        android:layout_height="56dp"
 
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:background="@color/white"
+        app:menu="@menu/bottom_nav_menu"
+        />
 </LinearLayout>
