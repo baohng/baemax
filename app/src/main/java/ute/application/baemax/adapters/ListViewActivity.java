@@ -1,9 +1,10 @@
-package ute.application.baemax.activities;
+package ute.application.baemax.adapters;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
+import android.view.WindowManager;
 
 import com.google.android.material.tabs.TabLayout;
 
