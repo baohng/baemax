@@ -8,6 +8,7 @@ import ute.application.baemax.R;
 
 public class menu_detail extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

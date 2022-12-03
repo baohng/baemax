@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ute.application.baemax.R;
+import ute.application.baemax.adapters.ListViewActivity;
 import ute.application.baemax.dao.Card;
 import ute.application.baemax.dao.Category;
 import ute.application.baemax.adapters.CategoryAdapter;
@@ -78,7 +79,7 @@ public class Homepage extends AppCompatActivity {
         btnOrderHomepage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Homepage.this,ListViewActivity.class);
+                Intent intent = new Intent(Homepage.this, ListViewActivity.class);
                 startActivity(intent);
             }
         });

@@ -74,7 +74,7 @@
             android:name=".activities.Register"
             android:exported="false" />
         <activity
-            android:name=".activities.ListViewActivity"
+            android:name=".adapters.ListViewActivity"
             android:exported="false" />
         <activity
             android:name=".activities.MainActivity"
