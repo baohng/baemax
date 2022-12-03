@@ -34,7 +34,7 @@
             android:name=".activities.SandwichsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.home_admin"
+            android:name=".activities.Home_Admin"
             android:exported="false" />
         <activity
             android:name=".activities.LoginAdmin"
