@@ -291,17 +291,20 @@
     </LinearLayout>
 
     <Button
+
+        app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/buttonDangXuat"
         android:layout_width="118dp"
         android:layout_height="51dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/btn_close"
         android:text="@string/dang_xuat"
         android:textAllCaps="false"
         android:textColor="@color/main_color"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="25dp"/>
+       android:layout_marginTop="@dimen/_13sdp" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigator"
         android:layout_width="409dp"
