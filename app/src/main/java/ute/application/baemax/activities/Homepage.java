@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +28,7 @@ public class Homepage extends AppCompatActivity {
     //Testing transfer button
     Button btnOrderHomepage;
     //
+    ImageView avatarToProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +49,8 @@ public class Homepage extends AppCompatActivity {
         rcvCategory.setAdapter(categoryAdapter);
 
         //Testing transfer
-        setOrderActivity();
+        setOpenOrderActivity();
+        setOpenProfileActivity();
         //
     }
     private List<Category> getListCategory(){
@@ -73,12 +76,23 @@ public class Homepage extends AppCompatActivity {
         return listListFood ;
     }
 
-    public void setOrderActivity(){
+    public void setOpenOrderActivity(){
         btnOrderHomepage = (Button) findViewById(R.id.btnORDERHomepage);
         btnOrderHomepage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Homepage.this,ListViewActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void setOpenProfileActivity(){
+        avatarToProfile = (ImageView) findViewById(R.id.avatarHomepage);
+        avatarToProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Homepage.this,Profile.class);
                 startActivity(intent);
             }
         });

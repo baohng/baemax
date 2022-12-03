@@ -2,23 +2,23 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_marginRight="10dp"
-    android:layout_marginLeft="10dp"
-    android:background="@drawable/item_radius"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/_6sdp"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:background="@drawable/item_radius">
 
     <FrameLayout
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:background="@drawable/item_radius"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
       >
 
         <ImageView
             android:id="@+id/img_food"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginTop="-10dp"
+            android:layout_height="wrap_content"
             android:src="@drawable/foot_main_1" />
 
         <TextView
@@ -28,41 +28,40 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="95dp"
             android:text="Burgers hot"
+            android:textColor="#6c757d"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="120dp"
-            android:text="Fast foot"
-            android:textSize="10dp" />
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_94sdp"
+            android:text="Fast food"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8ssp" />
 
         <ImageView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="120dp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_95sdp"
             android:src="@drawable/icon_fast_foot" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="120dp"
+            android:layout_marginLeft="@dimen/_67sdp"
+            android:layout_marginTop="@dimen/_93sdp"
             android:text="4.9$"
-            android:textSize="12dp" />
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/black"/>
 
         <ImageView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="120dp"
-            android:layout_marginTop="120dp"
+            android:layout_marginLeft="@dimen/_95sdp"
+            android:layout_marginTop="@dimen/_93sdp"
             android:src="@drawable/icon_car" />
-
-
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

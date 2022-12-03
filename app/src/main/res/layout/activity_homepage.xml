@@ -5,47 +5,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.Homepage"
-    android:background="#FAF8EB"
+    android:background="@drawable/background_home_admin"
     >
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:stretchColumns="1"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_gravity="center_horizontal"
-            android:padding="10dp">
+            android:padding="@dimen/_10sdp">
             <LinearLayout
                 android:id="@+id/linearLayout"
-                android:layout_width="390dp"
-                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
                 android:background="#fff"
                 android:gravity="center"
                 android:orientation="horizontal"
-                android:padding="10dp"
-                android:layout_marginBottom="20dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="10dp"
-                tools:layout_editor_absoluteY="7dp">
+                android:layout_marginBottom="@dimen/_12sdp">
 
                 <ImageView
                     android:id="@+id/iconHeader"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
+                    android:scaleType="center"
                     android:src="@drawable/ic_header"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="70dp"
-                    android:layout_marginRight="70dp"
-                    android:orientation="horizontal">
+                    android:layout_marginLeft="@dimen/_45sdp"
+                    android:layout_marginRight="@dimen/_45sdp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_3sdp">
 
                     <ImageView
+                        android:layout_gravity="center"
                         android:id="@+id/checkicon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -58,79 +59,83 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:text="36 phạm văn nghị"
+                        android:textSize="@dimen/_12ssp"
+                        android:text="36 Phạm Văn Nghị  "
+                        android:fontFamily="@font/niramit_semibold"
                         android:textColor="#000"
-                        android:textStyle="bold|italic" />
+                        android:textStyle="bold|italic"
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"/>
                 </LinearLayout>
                 <ImageView
-                    android:id="@+id/avatar"
+                    android:id="@+id/avatarHomepage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/avatar"/>
+                    android:scaleType="center"
+                    android:src="@drawable/avatar"
+                    />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="390dp"
-                android:layout_height="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
                 android:background="@drawable/radius"
                 android:gravity="center"
-                tools:ignore="MissingConstraints"
-                android:layout_marginBottom="20dp"
-                tools:layout_editor_absoluteX="10dp"
-                tools:layout_editor_absoluteY="107dp">
+                android:layout_marginBottom="@dimen/_15sdp">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_search"/>
+                    android:src="@drawable/ic_search"
+                    android:scaleType="center"/>
 
                 <EditText
                     android:id="@+id/search"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_33sdp"
                     android:hint="Search burger"/>
 
                 <ImageView
+                    android:scaleType="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/icon"/>
             </LinearLayout>
-            <RelativeLayout
-                android:layout_width="372dp"
-                android:layout_height="199dp"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_190sdp"
                 android:background="@drawable/banner"
-                tools:ignore="MissingConstraints"
-                android:layout_marginBottom="20dp"
-                tools:layout_editor_absoluteX="19dp"
-                tools:layout_editor_absoluteY="185dp">
+                android:layout_marginBottom="@dimen/_10sdp">
 
                 <Button
                     android:id="@+id/btnORDERHomepage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="180dp"
-                    android:layout_marginTop="120dp"
+                    android:layout_marginLeft="@dimen/_170sdp"
+                    android:layout_marginTop="@dimen/_120sdp"
                     android:background="@drawable/bg_order_btn"
                     android:backgroundTint="@color/btnColor"
-                    android:padding="10dp"
+                    android:padding="@dimen/_10sdp"
                     android:text="ORDER NOW"
-                    android:textSize="20dp" />
-            </RelativeLayout>
+                    android:textSize="@dimen/_16ssp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rcv_category"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:ignore="MissingConstraints" />
+                android:padding="@dimen/_10sdp"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rcv_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                tools:ignore="MissingConstraints" />
+                android:padding="@dimen/_10sdp"/>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
