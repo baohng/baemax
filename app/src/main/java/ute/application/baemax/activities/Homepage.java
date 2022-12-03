@@ -1,4 +1,5 @@
 package ute.application.baemax.activities;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,6 +21,10 @@ import ute.application.baemax.adapters.CategoryAdapter;
 import ute.application.baemax.dao.Food;
 import ute.application.baemax.dao.ListFood;
 import ute.application.baemax.adapters.ListFoodAdapter;
+
+import android.view.MenuItem;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class Homepage extends AppCompatActivity {
     private  RecyclerView rcvFoodList;
     private ListFoodAdapter listFoodAdapter;
@@ -30,6 +35,7 @@ public class Homepage extends AppCompatActivity {
     Button btnOrderHomepage;
     //
     ImageView avatarToProfile;
+    BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +59,37 @@ public class Homepage extends AppCompatActivity {
         setOpenOrderActivity();
         setOpenProfileActivity();
         //
+
+
+        bottomNavigationView = findViewById(R.id.bottom_navigator);
+        bottomNavigationView.setSelectedItemId(R.id.home);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.profileV:
+                        startActivity(new Intent(getApplicationContext(), Profile.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                    case R.id.home:
+                        return  true;
+
+                    case R.id.listV:
+                        startActivity(new Intent(getApplicationContext(), ListViewActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                    case R.id.cart:
+                        startActivity(new Intent(getApplicationContext(), CartActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                }
+                return false;
+            }
+        });
     }
     private List<Category> getListCategory(){
         List<Category> listCategory = new ArrayList<>();

@@ -17,8 +17,8 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <FrameLayout
-        android:layout_width="409dp"
-        android:layout_height="499dp"
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
         android:layout_marginTop="230dp"
         android:background="@drawable/menu_listview"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -69,13 +69,25 @@
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
-            android:layout_height="389dp"
+            android:layout_height="380dp"
             android:layout_below="@+id/tab_layout"
 
             android:layout_marginTop="110dp" />
 
     </FrameLayout>
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigator"
+        android:layout_width="409dp"
+        android:layout_height="56dp"
 
+        android:layout_marginTop="730dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_nav_menu" />
 
 </RelativeLayout>

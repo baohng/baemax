@@ -60,7 +60,7 @@ public class DrinksAdapter extends FirebaseRecyclerAdapter<MainModel,DrinksAdapt
             public void onClick(View view) {
                 final DialogPlus dialogPlus = DialogPlus.newDialog(holder.img.getContext())
                         .setContentHolder(new ViewHolder(R.layout.update_drinks))
-                        .setExpanded(true,1500)
+                        .setExpanded(true,2000)
                         .create();
 
 
