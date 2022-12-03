@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_profile"
     tools:context=".activities.Profile">
-
     <ImageView
         android:id="@+id/imageViewProfileHolder"
         android:layout_width="match_parent"
@@ -81,7 +80,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_go_next"
-                android:layout_marginStart="154dp"/>
+                android:layout_marginStart="@dimen/_110sdp"
+                android:scaleType="center"/>
         </LinearLayout>
 
         <LinearLayout
@@ -112,10 +112,11 @@
                 tools:ignore="RtlCompat"
                 />
             <ImageView
+                android:scaleType="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_go_next"
-                android:layout_marginStart="174dp"/>
+                android:layout_marginStart="@dimen/_123sdp"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/layoutFeaturesItem3"
@@ -144,10 +145,11 @@
                 tools:ignore="RtlCompat"
                 />
             <ImageView
+                android:scaleType="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_go_next"
-                android:layout_marginStart="92dp"/>
+                android:layout_marginStart="@dimen/_67sdp"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/layoutFeaturesItem4"
@@ -179,7 +181,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_go_next"
-                android:layout_marginStart="110dp"/>
+                android:layout_marginStart="@dimen/_79sdp"
+                android:scaleType="center"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/layoutFeaturesItem5"
@@ -208,10 +211,11 @@
                 tools:ignore="RtlCompat"
                 />
             <ImageView
+                android:scaleType="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_go_next"
-                android:layout_marginStart="26dp"/>
+                android:layout_marginStart="@dimen/_21sdp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -245,7 +249,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_go_next"
-                android:layout_marginStart="151dp"/>
+                android:layout_marginStart="@dimen/_107sdp"
+                android:scaleType="center"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/layoutFeaturesItem7"
@@ -277,7 +282,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_go_next"
-                android:layout_marginStart="203dp"/>
+                android:layout_marginStart="@dimen/_143sdp"
+                android:scaleType="center"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -298,6 +304,5 @@
         app:layout_constraintTop_toBottomOf="@+id/layoutProfileFeatures"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="39dp"/>
-
+        android:layout_marginTop="25dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
