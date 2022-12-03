@@ -292,12 +292,13 @@
         android:background="@drawable/btn_close"
         android:text="@string/dang_xuat"
         android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textColor="@color/main_color"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigator"
         android:layout_width="409dp"

@@ -10,6 +10,7 @@ import ute.application.baemax.R;
 import ute.application.baemax.adapters.ListViewActivity;
 
 import android.view.MenuItem;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -18,8 +19,22 @@ public class Profile extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Button button;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
+
+        //            đăng xuất khi on click vào button log out trên layout profile
+
+         button = (Button) findViewById(R.id.buttonDangXuat);
+
+
+
+
+
+
+
+
 
         bottomNavigationView = findViewById(R.id.bottom_navigator);
         bottomNavigationView.setSelectedItemId(R.id.profileV);
@@ -50,6 +65,14 @@ public class Profile extends AppCompatActivity {
                 }
                 return false;
             }
+
+
+
+
+
+
+
+
         });
     }
 }

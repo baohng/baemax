@@ -67,7 +67,7 @@
                 <ImageView
                     android:id="@+id/avatar"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:scaleType="centerCrop"
                     android:src="@drawable/avatar" />
             </LinearLayout>
@@ -112,6 +112,19 @@
                 tools:layout_editor_absoluteX="19dp"
                 tools:layout_editor_absoluteY="185dp">
 
+                <TextView
+                    style="@style/textBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="85dp"
+                    android:text="Black Friday HOT "
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+
+
+                    />
+
                 <Button
                     android:id="@+id/btnORDERHomepage"
                     android:layout_width="wrap_content"
@@ -120,14 +133,15 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginLeft="180dp"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="104dp"
-                    android:layout_marginEnd="233dp"
+                    android:layout_marginEnd="20dp"
                     android:layout_marginBottom="16dp"
                     android:background="@drawable/bg_order_btn"
                     android:backgroundTint="@color/btnColor"
                     android:padding="10dp"
+                    android:textColor="@color/white"
                     android:text="ORDER NOW"
                     android:textSize="20dp" />
             </RelativeLayout>

@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/drawable/btn_close.xml" value="0.1745" />
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/drawable/item_btn_food_admin.xml" value="0.1745" />
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/layout/activity_homepage.xml" value="0.264" />
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/layout/activity_profile.xml" value="0.264" />
+        <entry key="..\:/HocTap/Android/order-food-service/app/src/main/res/layout/activity_register.xml" value="0.13722826086956522" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/drawable/back_icon.xml" value="0.1535" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/drawable/btn_close.xml" value="0.1535" />
         <entry key="..\:/codeAndroid/order-food-service/app/src/main/res/drawable/btn_order_card.xml" value="0.1535" />
