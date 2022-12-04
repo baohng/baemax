@@ -86,5 +86,13 @@
                 android:layout_marginStart="34dp"/>
         </LinearLayout>
     </LinearLayout>
+<<<<<<< HEAD
+=======
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigator"
+        android:layout_width="409dp"
+        android:layout_height="56dp"/>
+>>>>>>> d3c51562c7458af6553f8f95348e653efe68e66e
 
 </RelativeLayout>
