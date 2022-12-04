@@ -5,9 +5,58 @@ public class Item {
     String star;
     String price;
     String describe;
+    String them;
     int image;
+    String id;
+    String sur;
+    String trangthai;
+    String slg;
 
-    public Item(String name,String describe, String star, String price, int image) {
+    public String getSlg() {
+        return slg;
+    }
+
+    public void setSlg(String slg) {
+        this.slg = slg;
+    }
+
+    public String getThem() {
+        return them;
+    }
+
+    public void setThem(String them) {
+        this.them = them;
+    }
+
+    public String getTrangthai() {
+        return trangthai;
+    }
+
+    public void setTrangthai(String trangthai) {
+        this.trangthai = trangthai;
+    }
+
+    public String getSur() {
+        return sur;
+    }
+
+    public void setSur(String sur) {
+        this.sur = sur;
+    }
+
+    public Item() {
+
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Item(String name, String describe, String star, String price, int image) {
         this.image = image;
         this.name = name;
         this.star = star;

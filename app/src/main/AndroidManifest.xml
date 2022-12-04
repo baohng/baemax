@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Baemax"
         tools:targetApi="31">
         <activity
+            android:name=".activities.SuccessOderActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.DrinksActivity"
             android:exported="false" />
         <activity

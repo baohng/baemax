@@ -7,17 +7,24 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
+import android.widget.Toast;
+
 import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import ute.application.baemax.R;
+import ute.application.baemax.activities.MainActivity;
 
 public class FoodCategoryAdapter extends FirebaseRecyclerAdapter<model, FoodCategoryAdapter.myviewholder>
 {
+    DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReference();
 
     public FoodCategoryAdapter(@NonNull FirebaseRecyclerOptions<model> options) {
         super(options);
@@ -30,6 +37,16 @@ public class FoodCategoryAdapter extends FirebaseRecyclerAdapter<model, FoodCate
         holder.describetext.setText(model.getDescribe());
         holder.startext.setText(model.getStar());
         Glide.with(holder.img1.getContext()).load(model.getSurl()).into(holder.img1);
+
+        holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                databaseReference.child("Cart").child(MainActivity.firebaseUser).child(model.getName()).setValue(model);
+                databaseReference.child("Cart").child(MainActivity.firebaseUser).child(model.getName()).child("trangthai").setValue("small classic");
+                databaseReference.child("Cart").child(MainActivity.firebaseUser).child(model.getName()).child("them").setValue("0");
+                databaseReference.child("Cart").child(MainActivity.firebaseUser).child(model.getName()).child("soluong").setValue("1");
+            }
+        });
 
 
 
@@ -44,8 +61,10 @@ public class FoodCategoryAdapter extends FirebaseRecyclerAdapter<model, FoodCate
 
     public class myviewholder extends RecyclerView.ViewHolder
     {
+
         ImageView img1;
         TextView nametext,pricetext,describetext, startext;
+        ConstraintLayout constraintLayout;
 
         public myviewholder(@NonNull View itemView) {
             super(itemView);
@@ -55,6 +74,7 @@ public class FoodCategoryAdapter extends FirebaseRecyclerAdapter<model, FoodCate
             pricetext=itemView.findViewById(R.id.price);
             describetext=itemView.findViewById(R.id.describe);
             startext=itemView.findViewById(R.id.star);
+            constraintLayout=itemView.findViewById(R.id.layout_itv);
         }
     }
 
