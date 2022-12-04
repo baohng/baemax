@@ -110,24 +110,6 @@
                 android:layout_height="@dimen/_190sdp"
                 android:background="@drawable/banner"
                 android:layout_marginBottom="@dimen/_10sdp">
-
-<<<<<<< HEAD
-                <TextView
-                    style="@style/textBold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="85dp"
-                    android:text="Black Friday HOT "
-                    android:textColor="@color/white"
-                    android:textSize="25dp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    />
-=======
-
-
->>>>>>> d3c51562c7458af6553f8f95348e653efe68e66e
                 <Button
                     android:id="@+id/btnORDERHomepage"
                     android:layout_width="wrap_content"
