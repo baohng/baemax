@@ -6,90 +6,104 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".activities.CartActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/img_banner"
-        android:layout_width="match_parent"
-        android:layout_height="174dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/banner_card1" />
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        >
-        <TextView
+        <ImageView
+            android:id="@+id/img_banner"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Your order"
-            android:textSize="28sp"
-            android:fontFamily="@font/niramit_semibold"
-            android:textColor="@color/black"
-            android:layout_marginTop="35dp"
-            android:layout_marginStart="15dp"
-            />
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/lv_card"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+            android:layout_height="174dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner_card1" />
 
-
-    </LinearLayout>
-    </LinearLayout>
-
-
-
-    <LinearLayout
-        android:layout_alignParentBottom="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-
-            android:layout_width="267dp"
-            android:layout_height="63dp"
-            android:text="Order"
-            android:textSize="20sp"
-            android:id="@+id/btnOder"
-            android:fontFamily="@font/niramit_semibold"
-            android:textColor="@color/white"
-            android:background="@drawable/btn_order_card"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="47dp"
-            />
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Item.Total"
-                android:textColor="@color/black"
-                android:fontFamily="@font/niramit_regular"
-                android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOder"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="63dp"
+                android:layout_marginStart="14dp"
                 android:layout_marginTop="47dp"
-                android:layout_marginStart="34dp"/>
-            <TextView
-                android:id="@+id/totalBill"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="15.05$"
-                android:textColor="@color/black"
+                android:background="@drawable/btn_order_card"
                 android:fontFamily="@font/niramit_semibold"
-                android:textSize="20sp"
-                android:layout_marginStart="34dp"/>
+                android:text="Order"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="47dp"
+                    android:fontFamily="@font/niramit_regular"
+                    android:text="Item.Total"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/totalBill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="34dp"
+                    android:fontFamily="@font/niramit_semibold"
+                    android:text="15.05$"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/niramit_semibold"
+                android:text="Your order"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lv_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
         </LinearLayout>
     </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigator"
         android:layout_width="409dp"
-        android:layout_height="56dp"/>
+        android:layout_height="56dp"
+        android:layout_marginTop="715dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_nav_menu">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</LinearLayout>
 
 </RelativeLayout>

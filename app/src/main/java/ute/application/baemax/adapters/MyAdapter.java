@@ -54,7 +54,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.price.setText(String.valueOf((Double.parseDouble(item.getPrice())+Double.parseDouble(item.getThem()))));
         holder.describe.setText(item.getDescribe());
         holder.trangthai.setText(item.getTrangthai());
-        holder.slg.setText("Số lượng: "+item.getSlg());
+        holder.slg.setText("Number: "+item.getSlg());
         holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

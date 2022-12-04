@@ -58,7 +58,7 @@ public class CartActivity extends AppCompatActivity {
                     item.setName(dataSnapshot.child("name").getValue(String.class));
                     item.setStar(dataSnapshot.child("star").getValue(String.class));
                     item.setPrice(dataSnapshot.child("price").getValue(String.class));
-                    item.setSur(dataSnapshot.child("sur").getValue(String.class));
+                    item.setSur(dataSnapshot.child("surl").getValue(String.class));
                     item.setTrangthai(dataSnapshot.child("trangthai").getValue(String.class));
                     item.setThem(dataSnapshot.child("them").getValue(String.class));
                     item.setSlg(dataSnapshot.child("soluong").getValue(String.class));

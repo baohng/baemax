@@ -60,7 +60,7 @@ public class BurgersAdapter extends FirebaseRecyclerAdapter<MainModel,BurgersAda
             public void onClick(View view) {
                 final DialogPlus dialogPlus = DialogPlus.newDialog(holder.img.getContext())
                         .setContentHolder(new ViewHolder(R.layout.update_burgers))
-                        .setExpanded(true,2000)
+                        .setExpanded(true,1000)
                         .create();
 
 

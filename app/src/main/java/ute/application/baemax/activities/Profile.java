@@ -100,9 +100,10 @@ public class Profile extends AppCompatActivity {
                     //code logout on back layout app
 //                    onBackPressed();
 
-
+                    Intent intent = new Intent(Profile.this,MainActivity.class);
+                    startActivity(intent);
                     /// logout success in home phone
-                    finishAffinity();
+//                    finishAffinity();
 
 
                 }

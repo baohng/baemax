@@ -97,7 +97,7 @@
                 android:gravity="center"
                 android:textSize="@dimen/_10sdp"
                 android:fontFamily="@font/niramit_regular"
-                android:layout_marginStart="@dimen/_150sdp"
+                android:layout_marginStart="@dimen/_130sdp"
                 android:textColor="#C35E5E"/>
 
         </LinearLayout>
@@ -125,7 +125,7 @@
                 android:id="@+id/sizesmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_160sdp"
+                android:layout_marginStart="@dimen/_140sdp"
                 android:text="+0.00$"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_14sdp" />
@@ -154,7 +154,7 @@
                 android:text="+5.99$"
                 android:textSize="@dimen/_14sdp"
                 android:textColor="@color/black"
-                android:layout_marginStart="@dimen/_139sdp"
+                android:layout_marginStart="@dimen/_119sdp"
                 />
         </LinearLayout>
 
@@ -181,7 +181,7 @@
                 android:text="+8.99$"
                 android:textSize="@dimen/_14sdp"
                 android:textColor="@color/black"
-                android:layout_marginStart="@dimen/_153sdp"
+                android:layout_marginStart="@dimen/_132sdp"
                 />
         </LinearLayout>
         </RadioGroup>
@@ -228,7 +228,7 @@
                 android:gravity="center"
                 android:textSize="@dimen/_10sdp"
                 android:fontFamily="@font/niramit_regular"
-                android:layout_marginStart="@dimen/_150sdp"
+                android:layout_marginStart="@dimen/_130sdp"
                 android:textColor="#C35E5E"/>
 
         </LinearLayout>
@@ -255,7 +255,7 @@
                 android:text="+0.00$"
                 android:textSize="@dimen/_14sdp"
                 android:textColor="@color/black"
-                android:layout_marginStart="@dimen/_100sdp"
+                android:layout_marginStart="@dimen/_80sdp"
                 />
         </LinearLayout>
 
@@ -281,7 +281,7 @@
                 android:text="+5.99$"
                 android:textSize="@dimen/_14sdp"
                 android:textColor="@color/black"
-                android:layout_marginStart="@dimen/_160sdp"
+                android:layout_marginStart="@dimen/_140sdp"
                 />
         </LinearLayout>
 
@@ -306,7 +306,7 @@
                 android:text="+8.99$"
                 android:textSize="@dimen/_14sdp"
                 android:textColor="@color/black"
-                android:layout_marginStart="@dimen/_178sdp"
+                android:layout_marginStart="@dimen/_158sdp"
                 />
         </LinearLayout>
     </LinearLayout>
@@ -315,11 +315,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:layout_height="50dp"
-        android:layout_marginTop="404dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
         android:layout_marginHorizontal="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/layoutPayfoodFeatures2">
         <androidx.cardview.widget.CardView
             android:id="@+id/btn_truSL"
             android:layout_width="40dp"
@@ -340,8 +340,9 @@
             android:gravity="center"
             android:textStyle="bold"
             android:textSize="30dp"
-            android:layout_height="match_parent">
-        </TextView>
+            android:textColor="@color/Green_main"
+            android:layout_height="match_parent"
+            android:textAlignment="center"/>
         <androidx.cardview.widget.CardView
             android:id="@+id/btn_addSL"
             android:layout_width="40dp"
@@ -352,7 +353,8 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/add_new">
+                android:src="@drawable/add_new"
+                >
             </ImageView>
         </androidx.cardview.widget.CardView>
 
@@ -361,8 +363,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_marginStart="@dimen/_5sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -370,16 +370,16 @@
             android:id="@+id/buttonOrder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_12sdp"
             android:layout_marginTop="@dimen/_25sdp"
             android:layout_marginBottom="@dimen/_19sdp"
             android:background="@drawable/bg_order_btn"
             android:fontFamily="@font/niramit_semibold"
-            android:paddingStart="@dimen/_70sdp"
+            android:paddingStart="@dimen/_50sdp"
             android:paddingTop="@dimen/_5sdp"
             android:paddingEnd="@dimen/_70sdp"
             android:paddingBottom="@dimen/_5sdp"
-            android:text="ORDER"
+            android:text="CHOOSE"
             android:textColor="@color/white"
             android:textSize="@dimen/_20sdp"
             app:layout_constraintBottom_toBottomOf="parent"

@@ -59,7 +59,7 @@ public class SandwichsAdapter extends FirebaseRecyclerAdapter<MainModel,Sandwich
             public void onClick(View view) {
                 final DialogPlus dialogPlus = DialogPlus.newDialog(holder.img.getContext())
                         .setContentHolder(new ViewHolder(R.layout.update_sandwichs))
-                        .setExpanded(true,2000)
+                        .setExpanded(true,1000)
                         .create();
 
 
