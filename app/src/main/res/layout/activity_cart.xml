@@ -13,11 +13,10 @@
 
     <ImageView
         android:id="@+id/img_banner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/banner_card1"
-         />
+        android:src="@drawable/banner_card1" />
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
@@ -87,5 +86,9 @@
                 android:layout_marginStart="34dp"/>
         </LinearLayout>
     </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigator"
+        android:layout_width="409dp"
+        android:layout_height="56dp"
 
 </RelativeLayout>

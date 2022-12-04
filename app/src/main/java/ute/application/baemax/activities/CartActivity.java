@@ -88,5 +88,33 @@ public class CartActivity extends AppCompatActivity {
 
 
         recview.setAdapter(myAdapter);
+        bottomNavigationView = findViewById(R.id.bottom_navigator);
+        bottomNavigationView.setSelectedItemId(R.id.cart);
+
+        // bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        //     @Override
+        //     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        //         switch (item.getItemId()){
+        //             case R.id.profileV:
+        //                 startActivity(new Intent(getApplicationContext(), Profile.class));
+        //                 overridePendingTransition(0,0);
+        //                 return true;
+
+        //             case R.id.cart:
+        //                 return  true;
+
+        //             case R.id.listV:
+        //                 startActivity(new Intent(getApplicationContext(), ListViewActivity.class));
+        //                 overridePendingTransition(0,0);
+        //                 return true;
+        //             case R.id.home:
+        //                 startActivity(new Intent(getApplicationContext(), Homepage.class));
+        //                 overridePendingTransition(0,0);
+        //                 return true;
+        //         }
+        //         return false;
+        //     }
+        // });
+
     }
 }

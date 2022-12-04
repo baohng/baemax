@@ -41,41 +41,39 @@
         android:id="@+id/layoutProfileFeatures"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewProfileHolder"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
         android:gravity="center_vertical"
         android:orientation="vertical"
-        android:layout_marginTop="18dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="39dp">
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProfileHolder">
 
         <LinearLayout
             android:id="@+id/layoutFeaturesItem1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
             android:background="@drawable/profile_feature_item"
-            >
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_voucher"
-                android:layout_marginStart="25dp"/>
+                android:layout_marginStart="25dp"
+                android:src="@drawable/ic_voucher" />
+
             <TextView
-                android:textAlignment="center"
-                android:gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="57dp"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/niramit_semibold"
+                android:gravity="center_vertical"
                 android:text="@string/v_voucher"
+                android:textAlignment="center"
                 android:textColor="@color/textColor"
                 android:textSize="22sp"
-                android:fontFamily="@font/niramit_semibold"
-                android:layout_marginStart="18dp"
-                tools:ignore="RtlCompat"
-                />
+                tools:ignore="RtlCompat" />
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -85,32 +83,32 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="32dp"
             android:id="@+id/layoutFeaturesItem2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
+            android:layout_marginTop="32dp"
             android:background="@drawable/profile_feature_item"
-            >
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_payment"
-                android:layout_marginStart="25dp"/>
+                android:layout_marginStart="25dp"
+                android:src="@drawable/ic_payment" />
+
             <TextView
-                android:textAlignment="center"
-                android:gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="57dp"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/niramit_semibold"
+                android:gravity="center_vertical"
                 android:text="@string/payment"
+                android:textAlignment="center"
                 android:textColor="@color/textColor"
                 android:textSize="22sp"
-                android:fontFamily="@font/niramit_semibold"
-                android:layout_marginStart="18dp"
-                tools:ignore="RtlCompat"
-                />
+                tools:ignore="RtlCompat" />
+
             <ImageView
                 android:scaleType="center"
                 android:layout_width="wrap_content"
@@ -118,32 +116,33 @@
                 android:src="@drawable/ic_go_next"
                 android:layout_marginStart="@dimen/_123sdp"/>
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/layoutFeaturesItem3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
             android:background="@drawable/profile_feature_item"
-            >
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_history"
-                android:layout_marginStart="25dp"/>
+                android:layout_marginStart="25dp"
+                android:src="@drawable/ic_history" />
+
             <TextView
-                android:textAlignment="center"
-                android:gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="57dp"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/niramit_semibold"
+                android:gravity="center_vertical"
                 android:text="@string/cart_history"
+                android:textAlignment="center"
                 android:textColor="@color/textColor"
                 android:textSize="22sp"
-                android:fontFamily="@font/niramit_semibold"
-                android:layout_marginStart="18dp"
-                tools:ignore="RtlCompat"
-                />
+                tools:ignore="RtlCompat" />
+
             <ImageView
                 android:scaleType="center"
                 android:layout_width="wrap_content"
@@ -151,32 +150,33 @@
                 android:src="@drawable/ic_go_next"
                 android:layout_marginStart="@dimen/_67sdp"/>
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/layoutFeaturesItem4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
             android:background="@drawable/profile_feature_item"
-            >
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_reward_credit"
-                android:layout_marginStart="25dp"/>
+                android:layout_marginStart="25dp"
+                android:src="@drawable/ic_reward_credit" />
+
             <TextView
-                android:textAlignment="center"
-                android:gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="57dp"
-                android:text="Reward Credits"
+                android:layout_marginStart="18dp"
                 android:fontFamily="@font/niramit_semibold"
+                android:gravity="center_vertical"
+                android:text="Reward Credits"
+                android:textAlignment="center"
                 android:textColor="@color/textColor"
                 android:textSize="22sp"
-                android:layout_marginStart="18dp"
-                tools:ignore="RtlCompat"
-                />
+                tools:ignore="RtlCompat" />
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -184,32 +184,33 @@
                 android:layout_marginStart="@dimen/_79sdp"
                 android:scaleType="center"/>
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/layoutFeaturesItem5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
             android:background="@drawable/profile_feature_item"
-            >
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_management"
-                android:layout_marginStart="25dp"/>
+                android:layout_marginStart="25dp"
+                android:src="@drawable/ic_management" />
+
             <TextView
-                android:textAlignment="center"
-                android:gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="57dp"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/niramit_semibold"
+                android:gravity="center_vertical"
                 android:text="@string/management_app"
+                android:textAlignment="center"
                 android:textColor="@color/textColor"
                 android:textSize="22sp"
-                android:fontFamily="@font/niramit_semibold"
-                android:layout_marginStart="18dp"
-                tools:ignore="RtlCompat"
-                />
+                tools:ignore="RtlCompat" />
+
             <ImageView
                 android:scaleType="center"
                 android:layout_width="wrap_content"
@@ -219,32 +220,32 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="14dp"
             android:id="@+id/layoutFeaturesItem6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
+            android:layout_marginTop="14dp"
             android:background="@drawable/profile_feature_item"
-            >
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_addfr"
-                android:layout_marginStart="25dp"/>
+                android:layout_marginStart="25dp"
+                android:src="@drawable/ic_addfr" />
+
             <TextView
-                android:textAlignment="center"
-                android:gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="57dp"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/niramit_semibold"
+                android:gravity="center_vertical"
                 android:text="@string/invite_fr"
+                android:textAlignment="center"
                 android:textColor="@color/textColor"
                 android:textSize="22sp"
-                android:fontFamily="@font/niramit_semibold"
-                android:layout_marginStart="18dp"
-                tools:ignore="RtlCompat"
-                />
+                tools:ignore="RtlCompat" />
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -252,32 +253,33 @@
                 android:layout_marginStart="@dimen/_107sdp"
                 android:scaleType="center"/>
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/layoutFeaturesItem7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
             android:background="@drawable/profile_feature_item"
-            >
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_mail"
-                android:layout_marginStart="25dp"/>
+                android:layout_marginStart="25dp"
+                android:src="@drawable/ic_mail" />
+
             <TextView
-                android:textAlignment="center"
-                android:gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="57dp"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/niramit_semibold"
+                android:gravity="center_vertical"
                 android:text="@string/feedback"
+                android:textAlignment="center"
                 android:textColor="@color/textColor"
                 android:textSize="22sp"
-                android:fontFamily="@font/niramit_semibold"
-                android:layout_marginStart="18dp"
-                tools:ignore="RtlCompat"
-                />
+                tools:ignore="RtlCompat" />
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -289,20 +291,31 @@
     </LinearLayout>
 
     <Button
+
+        app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/buttonDangXuat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/btn_bg"
+        android:layout_width="118dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_close"
         android:text="@string/dang_xuat"
-        android:textColor="@color/white"
-        android:layout_marginStart="80dp"
-        android:textSize="20sp"
-        android:layout_marginEnd="80dp"
         android:textAllCaps="false"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="704dp"
-        app:layout_constraintTop_toBottomOf="@+id/layoutProfileFeatures"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/main_color"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="25dp"/>
+       android:layout_marginTop="@dimen/_13sdp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigator"
+        android:layout_width="409dp"
+        android:layout_height="56dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:background="@color/white"
+        app:menu="@menu/bottom_nav_menu"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

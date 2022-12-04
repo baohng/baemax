@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 
 import ute.application.baemax.R;
 
-public class home_admin extends AppCompatActivity {
+public class Home_Admin extends AppCompatActivity {
     LinearLayout backhere;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
