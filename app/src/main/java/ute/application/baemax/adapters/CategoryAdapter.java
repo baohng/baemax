@@ -43,6 +43,8 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
         CardAdapter bookAdapter= new CardAdapter();
         bookAdapter.setData(category.getBooks());
         holder.rcvCard.setAdapter(bookAdapter);
+
+
     }
     @Override
     public int getItemCount() {
