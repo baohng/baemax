@@ -112,9 +112,6 @@
                 android:layout_height="@dimen/_190sdp"
                 android:background="@drawable/banner"
                 android:layout_marginBottom="@dimen/_10sdp">
-
-
-
                 <Button
                     android:id="@+id/btnORDERHomepage"
                     android:layout_width="wrap_content"
