@@ -107,44 +107,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginStart="27dp"
-                android:layout_marginTop="406dp"
-                android:background="@drawable/bg_button"
-                android:fontFamily="@font/niramit_semibold"
-                android:text="-"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="60dp"
-                android:layout_marginTop="400dp"
-                android:fontFamily="@font/niramit_semibold"
-                android:text="1"
-                android:textAlignment="center"
-                android:textColor="@color/main_color"
-                android:textSize="22dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginStart="80dp"
-                android:layout_marginTop="406dp"
-                android:background="@drawable/bg_btn_add"
-                android:fontFamily="@font/niramit_semibold"
-                android:text="+"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -166,19 +129,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:layout_width="287dp"
-                android:layout_height="53dp"
-                android:layout_marginStart="64dp"
-                android:layout_marginTop="512dp"
-                android:background="@drawable/bg_btn_order"
-                android:fontFamily="@font/niramit_semibold"
-                android:text="ORDER"
-                android:textAlignment="center"
-                android:textColor="@color/main_color"
-                android:textSize="25sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
