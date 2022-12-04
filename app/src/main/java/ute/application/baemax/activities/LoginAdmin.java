@@ -37,7 +37,7 @@ public class LoginAdmin extends AppCompatActivity {
                     Toast.makeText(LoginAdmin.this, "Vui lòng nhập thông tin!", Toast.LENGTH_SHORT).show();
                 } else if((editTextEmail_1.getText().toString().equals("admin") && editTextPassword_1.getText().toString().equals("admin"))
                         || (editTextEmail_1.getText().toString().equals(passUname) && editTextPassword_1.getText().toString().equals(passPword)))         {
-                    Intent intent = new Intent(LoginAdmin.this, home_admin.class);
+                    Intent intent = new Intent(LoginAdmin.this, Home_Admin.class);
                     startActivity(intent);
                 } else {
                     Toast.makeText(LoginAdmin.this, "Tài khoản hoặc mật khẩu chưa chính xác!", Toast.LENGTH_SHORT).show();

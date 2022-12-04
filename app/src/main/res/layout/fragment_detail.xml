@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.menu_detail">
+    >
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,6 +39,7 @@
                 android:layout_marginTop="67dp"
                 android:fontFamily="@font/niramit_semibold"
                 android:text="Buffalo Burger"
+                android:id="@+id/name_foot"
                 android:textColor="@color/black"
                 android:textSize="40sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -54,10 +55,24 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/price_foot"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="73dp"
-                android:layout_marginTop="124dp"
+                android:layout_marginStart="440dp"
+                android:layout_marginTop="76dp"
+                android:fontFamily="@font/niramit_medium"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/star_foot2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="104dp"
+                android:layout_marginTop="128dp"
                 android:fontFamily="@font/niramit_medium"
                 android:text="5.0"
                 android:textColor="@color/black"
@@ -91,6 +106,7 @@
                 android:fontFamily="@font/niramit_semibolditalic"
                 android:text="Devine Restaurant"
                 android:textColor="@color/black"
+                android:id="@+id/describe_foot"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -107,7 +123,44 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="406dp"
+                android:background="@drawable/bg_button"
+                android:fontFamily="@font/niramit_semibold"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="400dp"
+                android:fontFamily="@font/niramit_semibold"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@color/main_color"
+                android:textSize="22dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="406dp"
+                android:background="@drawable/bg_btn_add"
+                android:fontFamily="@font/niramit_semibold"
+                android:text="+"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -129,7 +182,19 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-
+            <TextView
+                android:layout_width="287dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="512dp"
+                android:background="@drawable/bg_btn_order"
+                android:fontFamily="@font/niramit_semibold"
+                android:text="ORDER"
+                android:textAlignment="center"
+                android:textColor="@color/main_color"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

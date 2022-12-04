@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Baemax"
         tools:targetApi="31">
         <activity
+            android:name=".activities.SuccessOderActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.DrinksActivity"
             android:exported="false" />
         <activity
@@ -34,7 +37,7 @@
             android:name=".activities.SandwichsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.home_admin"
+            android:name=".activities.Home_Admin"
             android:exported="false" />
         <activity
             android:name=".activities.LoginAdmin"
@@ -74,7 +77,7 @@
             android:name=".activities.Register"
             android:exported="false" />
         <activity
-            android:name=".activities.ListViewActivity"
+            android:name=".adapters.ListViewActivity"
             android:exported="false" />
         <activity
             android:name=".activities.MainActivity"

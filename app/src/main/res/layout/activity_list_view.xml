@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.ListViewActivity">
+    android:id="@+id/wrapper"
+    tools:context=".adapters.ListViewActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -15,15 +16,57 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
+
     <FrameLayout
-        android:layout_width="409dp"
-        android:layout_height="499dp"
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
         android:layout_marginTop="230dp"
         android:background="@drawable/menu_listview"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="1.0"
         tools:layout_editor_absoluteX="2dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_250sdp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <RelativeLayout
+                android:id="@+id/layouttopnacc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/topnavMess"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/icon_cart" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/unseenMain"
+
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:cardCornerRadius="30dp"
+                    android:layout_alignParentEnd="true"
+                    app:cardBackgroundColor="#FF0000">
+                    <TextView
+                        android:id="@+id/textUnseenMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:text="1"/>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
 
         <TextView
             android:id="@+id/textView"
@@ -68,13 +111,25 @@
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
-            android:layout_height="389dp"
+            android:layout_height="380dp"
             android:layout_below="@+id/tab_layout"
 
             android:layout_marginTop="110dp" />
 
     </FrameLayout>
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigator"
+        android:layout_width="409dp"
+        android:layout_height="56dp"
 
+        android:layout_marginTop="730dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_nav_menu" />
 
 </RelativeLayout>

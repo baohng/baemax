@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background_profile"
     >
 
     <TextView
@@ -23,6 +24,7 @@
         android:textSize="20sp"
         android:gravity="center"
         android:text="Name"
+        android:textColor="@color/black"
         />
 
     <EditText
@@ -43,6 +45,7 @@
         android:textSize="20sp"
         android:gravity="center"
         android:text="Price"
+        android:textColor="@color/black"
         />
 
     <EditText
@@ -62,6 +65,7 @@
         android:textSize="20sp"
         android:gravity="center"
         android:text="Describe"
+        android:textColor="@color/black"
         />
 
     <EditText
@@ -81,6 +85,7 @@
         android:textSize="20sp"
         android:gravity="center"
         android:text="Star"
+        android:textColor="@color/black"
         />
 
     <EditText
@@ -100,6 +105,7 @@
         android:textSize="20sp"
         android:gravity="center"
         android:text="Image Url"
+        android:textColor="@color/black"
         />
 
     <EditText

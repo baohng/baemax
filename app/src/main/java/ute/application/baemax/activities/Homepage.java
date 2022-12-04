@@ -1,4 +1,5 @@
 package ute.application.baemax.activities;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -7,17 +8,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import ute.application.baemax.R;
+import ute.application.baemax.adapters.ListViewActivity;
 import ute.application.baemax.dao.Card;
 import ute.application.baemax.dao.Category;
 import ute.application.baemax.adapters.CategoryAdapter;
 import ute.application.baemax.dao.Food;
 import ute.application.baemax.dao.ListFood;
 import ute.application.baemax.adapters.ListFoodAdapter;
+
+import android.view.MenuItem;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class Homepage extends AppCompatActivity {
     private  RecyclerView rcvFoodList;
     private ListFoodAdapter listFoodAdapter;
@@ -27,6 +34,8 @@ public class Homepage extends AppCompatActivity {
     //Testing transfer button
     Button btnOrderHomepage;
     //
+    ImageView avatarToProfile;
+    BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,18 +56,48 @@ public class Homepage extends AppCompatActivity {
         rcvCategory.setAdapter(categoryAdapter);
 
         //Testing transfer
-        setOrderActivity();
+        setOpenOrderActivity();
+        setOpenProfileActivity();
         //
+
+
+        bottomNavigationView = findViewById(R.id.bottom_navigator);
+        bottomNavigationView.setSelectedItemId(R.id.home);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.profileV:
+                        startActivity(new Intent(getApplicationContext(), Profile.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                    case R.id.home:
+                        return  true;
+
+                    case R.id.listV:
+                        startActivity(new Intent(getApplicationContext(), ListViewActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                    case R.id.cart:
+                        startActivity(new Intent(getApplicationContext(), CartActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                }
+                return false;
+            }
+        });
     }
     private List<Category> getListCategory(){
         List<Category> listCategory = new ArrayList<>();
         List<Card> listBook=new ArrayList<>();
-        listBook.add(new Card(R.drawable.hambager,"hambager"));
-        listBook.add(new Card(R.drawable.pizza,"Pizza"));
-        listBook.add(new Card(R.drawable.hotdog,"Hotdog"));
-        listBook.add(new Card(R.drawable.pizza,"Pizza"));
-        listBook.add(new Card(R.drawable.hotdog,"Hotdog"));
-        listBook.add(new Card(R.drawable.hambager,"hambager"));
+        listBook.add(new Card(R.drawable.hambager,"Burgers"));
+        listBook.add(new Card(R.drawable.pizza,"Pizzas"));
+        listBook.add(new Card(R.drawable.hotdog,"Sandwichs"));
+        listBook.add(new Card(R.drawable.drink,"Drinks"));
 
         listCategory.add(new Category("Categories",listBook));
         return listCategory ;
@@ -73,14 +112,40 @@ public class Homepage extends AppCompatActivity {
         return listListFood ;
     }
 
-    public void setOrderActivity(){
+    public void setOpenOrderActivity(){
         btnOrderHomepage = (Button) findViewById(R.id.btnORDERHomepage);
         btnOrderHomepage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Homepage.this,ListViewActivity.class);
+                Intent intent = new Intent(Homepage.this, ListViewActivity.class);
                 startActivity(intent);
             }
         });
     }
+
+    public void setOpenProfileActivity(){
+        avatarToProfile = (ImageView) findViewById(R.id.avatarHomepage);
+        avatarToProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Homepage.this,Profile.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void onDetailClick(View View){
+        startActivity(new Intent(this,menu_detail.class));
+        overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
+
+    }
+
+    public void onListViewsClick(View View){
+        startActivity(new Intent(this,ListViewActivity.class));
+        overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
+
+    }
+
+
+
 }

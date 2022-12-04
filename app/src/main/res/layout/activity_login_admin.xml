@@ -10,17 +10,14 @@
     <TextView
         android:id="@+id/textView2"
         style="@style/textBold"
-        android:layout_width="157dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
         android:layout_marginStart="21dp"
         android:layout_marginTop="38dp"
-        android:layout_marginEnd="233dp"
+        android:layout_marginEnd="@dimen/_150sdp"
         android:text="BaeMax"
         android:textColor="@color/Green_main"
-        android:textSize="38dp" />
+        android:textSize="@dimen/_38ssp" />
 
     <RelativeLayout
         android:layout_width="371dp"
@@ -33,44 +30,37 @@
         android:layout_marginEnd="40dp"
         android:background="@drawable/login_background">
 
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/header_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/header_login_br">
+            android:background="@drawable/header_login_br"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <TextView
                 style="@style/textBold"
-                android:layout_width="248dp"
-                android:layout_height="33dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="27dp"
-                android:layout_marginEnd="68dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_9sdp"
+                android:paddingTop="@dimen/_20sdp"
+                android:gravity="center"
                 android:text="ALREADY HAVE AN ACCOUNT"
                 android:textColor="@color/Green_main" />
 
             <TextView
                 android:id="@+id/user"
                 style="@style/loginButton"
-
-                android:layout_width="wrap_content"
+                android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="240dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="5px"
+                android:layout_marginStart="@dimen/_12sdp"
                 android:gravity="center"
                 android:onClick="onLoginClickUser"
-
                 android:text="User"
-                android:textColor="@color/white" />
-        </RelativeLayout>
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -80,6 +70,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -106,7 +97,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="30dp"
-                android:text="Nhập password" />
+                android:text="Nhập password"
+                android:textColor="@color/black"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputPassword_1"
@@ -193,6 +185,7 @@
             android:layout_marginLeft="30dp"
             android:gravity="center"
             android:text="Sign in with facebook"
+            android:textColor="@color/black"
             android:textSize="18sp" />
 
     </LinearLayout>
@@ -219,6 +212,7 @@
             />
 
         <TextView
+            android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

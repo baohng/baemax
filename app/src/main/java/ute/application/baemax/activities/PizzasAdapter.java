@@ -59,7 +59,7 @@ public class PizzasAdapter extends FirebaseRecyclerAdapter<MainModel,PizzasAdapt
             public void onClick(View view) {
                 final DialogPlus dialogPlus = DialogPlus.newDialog(holder.img.getContext())
                         .setContentHolder(new ViewHolder(R.layout.update_pizzas))
-                        .setExpanded(true,1500)
+                        .setExpanded(true,1000)
                         .create();
 
 

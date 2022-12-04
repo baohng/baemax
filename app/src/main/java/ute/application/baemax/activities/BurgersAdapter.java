@@ -1,14 +1,15 @@
 package ute.application.baemax.activities;
+
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -50,16 +51,16 @@ public class BurgersAdapter extends FirebaseRecyclerAdapter<MainModel,BurgersAda
         holder.price.setText(model.getPrice());
         holder.describe.setText(model.getDescribe());
         holder.star.setText(model.getStar());
-        Glide.with(holder.img.getContext())
-               .load(model.getSurl())
-             .into(holder.img);
 
+        Glide.with(holder.img.getContext())
+                .load(model.getSurl())
+                .into(holder.img);
         holder.btnEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 final DialogPlus dialogPlus = DialogPlus.newDialog(holder.img.getContext())
                         .setContentHolder(new ViewHolder(R.layout.update_burgers))
-                        .setExpanded(true,1500)
+                        .setExpanded(true,1000)
                         .create();
 
 

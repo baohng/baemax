@@ -18,6 +18,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import ute.application.baemax.R;
 
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText email, pass;
     private Button btnlogin;
     private FirebaseAuth mAuth;
+    public static String firebaseUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,7 +79,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-
+                    firebaseUser = FirebaseAuth.getInstance().getCurrentUser().getUid();
+                    System.out.println(firebaseUser);
                     Toast.makeText(getApplicationContext(),"Đăng nhập thành công", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(MainActivity.this, Homepage.class);
                     startActivity(i);
