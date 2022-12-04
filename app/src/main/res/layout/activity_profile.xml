@@ -191,7 +191,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/profile_feature_item"
             android:gravity="center_vertical"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:onClick="onProfileClicktoAdmin">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -303,7 +304,9 @@
         android:textColor="@color/main_color"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-       android:layout_marginTop="@dimen/_13sdp" />
+       android:layout_marginTop="@dimen/_13sdp"
+
+        />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigator"

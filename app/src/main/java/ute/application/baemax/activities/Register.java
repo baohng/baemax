@@ -52,7 +52,7 @@ public class Register extends AppCompatActivity {
 
 
     public void onLoginClickRegister(View View){
-        startActivity(new Intent(this,Register.class));
+        startActivity(new Intent(this,MainActivity.class));
         overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
 
     }

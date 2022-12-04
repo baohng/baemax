@@ -111,32 +111,35 @@
                 android:background="@drawable/banner"
                 android:layout_marginBottom="@dimen/_10sdp">
 
-                <TextView
-                    style="@style/textBold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="85dp"
-                    android:text="Black Friday HOT "
-                    android:textColor="@color/white"
-                    android:textSize="25dp"
 
-
-                    />
 
                 <Button
                     android:id="@+id/btnORDERHomepage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_170sdp"
+                    android:layout_marginLeft="@dimen/_180sdp"
                     android:layout_marginTop="@dimen/_120sdp"
                     android:background="@drawable/bg_order_btn"
                     android:backgroundTint="@color/btnColor"
-                    android:padding="@dimen/_10sdp"
+                    android:padding="@dimen/_12sdp"
                     android:text="ORDER NOW"
-                    android:textSize="@dimen/_16ssp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    style="@style/textBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/_85sdp"
+                    android:text="Black Friday HOT "
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.recyclerview.widget.RecyclerView
