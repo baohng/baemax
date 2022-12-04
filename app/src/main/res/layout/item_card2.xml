@@ -20,6 +20,7 @@
             android:layout_width="@dimen/_60sdp"
             android:layout_height="@dimen/_50sdp"
             android:scaleType="center"
+            android:onClick="onListViewsClick"
             android:src="@drawable/hambager"/>
         <TextView
             android:gravity="center"

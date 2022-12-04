@@ -94,12 +94,10 @@ public class Homepage extends AppCompatActivity {
     private List<Category> getListCategory(){
         List<Category> listCategory = new ArrayList<>();
         List<Card> listBook=new ArrayList<>();
-        listBook.add(new Card(R.drawable.hambager,"hambager"));
-        listBook.add(new Card(R.drawable.pizza,"Pizza"));
-        listBook.add(new Card(R.drawable.hotdog,"Hotdog"));
-        listBook.add(new Card(R.drawable.pizza,"Pizza"));
-        listBook.add(new Card(R.drawable.hotdog,"Hotdog"));
-        listBook.add(new Card(R.drawable.hambager,"hambager"));
+        listBook.add(new Card(R.drawable.hambager,"Burgers"));
+        listBook.add(new Card(R.drawable.pizza,"Pizzas"));
+        listBook.add(new Card(R.drawable.hotdog,"Sandwichs"));
+        listBook.add(new Card(R.drawable.drink,"Drinks"));
 
         listCategory.add(new Category("Categories",listBook));
         return listCategory ;
@@ -135,5 +133,19 @@ public class Homepage extends AppCompatActivity {
             }
         });
     }
+
+    public void onDetailClick(View View){
+        startActivity(new Intent(this,menu_detail.class));
+        overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
+
+    }
+
+    public void onListViewsClick(View View){
+        startActivity(new Intent(this,ListViewActivity.class));
+        overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
+
+    }
+
+
 
 }

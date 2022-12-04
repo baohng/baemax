@@ -19,6 +19,7 @@
             android:id="@+id/img_food"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onDetailClick"
             android:src="@drawable/foot_main_1" />
 
         <TextView
