@@ -61,7 +61,7 @@
             android:name=".activities.Item_card"
             android:exported="false" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.Homepage"
             android:exported="false" />
         <activity
             android:name=".activities.Payfood"
@@ -80,7 +80,7 @@
             android:name=".adapters.ListViewActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.Homepage"
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

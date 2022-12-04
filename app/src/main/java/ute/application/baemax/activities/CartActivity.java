@@ -88,8 +88,8 @@ public class CartActivity extends AppCompatActivity {
 
 
         recview.setAdapter(myAdapter);
-        bottomNavigationView = findViewById(R.id.bottom_navigator);
-        bottomNavigationView.setSelectedItemId(R.id.cart);
+        //bottomNavigationView = findViewById(R.id.bottom_navigator);
+        //bottomNavigationView.setSelectedItemId(R.id.cart);
 
         // bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
         //     @Override
